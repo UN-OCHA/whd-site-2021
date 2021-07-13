@@ -6,3 +6,8 @@ global-styling:
     # -
   # dependencies:
     # -
+
+page-section:
+  css:
+    theme:
+      templates/components/page-section/paragraph--page-section.css: {}

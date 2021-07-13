@@ -1,0 +1,15 @@
+/**
+ * Paragraph: Page Section
+ */
+.page-section {
+  padding: 2em;
+  background: #3c3c3c;
+}
+
+.page-section--color-blue {
+  background: #00b9f1;
+}
+
+.page-section--color-yellow {
+  background: #ffdc4b;
+}
