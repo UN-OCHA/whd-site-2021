@@ -1,0 +1,9 @@
+name: WHD 2021
+type: theme
+description: WHD 2021 drupal theme.
+core: 8.x
+base theme: stark
+# logo: 'img/logos/whd.svg'
+
+# interface translation project: whd
+# interface translation server pattern: themes/custom/whd/translations/%language.po
