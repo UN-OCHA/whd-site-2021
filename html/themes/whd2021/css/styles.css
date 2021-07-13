@@ -1,0 +1,5 @@
+/* Global Styles for WHD 2021 */
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
