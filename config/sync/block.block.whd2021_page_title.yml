@@ -1,13 +1,13 @@
-uuid: 26b9a43d-d500-4b22-ad43-d0c7e6c804ad
+uuid: 90675d71-8cda-4ba6-824b-b3adaf679b89
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
+    - whd2021
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
-id: bartik_page_title
-theme: bartik
+id: whd2021_page_title
+theme: whd2021
 region: content
 weight: -50
 provider: null

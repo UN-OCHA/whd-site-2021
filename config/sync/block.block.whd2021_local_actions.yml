@@ -1,0 +1,20 @@
+uuid: d8cebd7c-4d30-4920-8b34-7f1c8e7980b8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - whd2021
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: whd2021_local_actions
+theme: whd2021
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

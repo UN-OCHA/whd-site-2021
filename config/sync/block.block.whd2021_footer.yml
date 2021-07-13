@@ -1,4 +1,4 @@
-uuid: 87f4450b-a449-4cd8-84d6-6703abb01423
+uuid: ba2f6d6e-e149-4168-b68c-e10df1cf3aa5
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - whd2021
 _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
-id: bartik_footer
-theme: bartik
-region: footer_fifth
+id: whd2021_footer
+theme: whd2021
+region: sidebar_first
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

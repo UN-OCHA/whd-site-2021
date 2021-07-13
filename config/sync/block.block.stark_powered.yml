@@ -1,16 +1,16 @@
-uuid: b8e92ed2-00d2-4c51-9b92-f6e548a160b2
+uuid: 793a37d0-e5b0-486e-aa55-6e6bf93be515
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - stark
 _core:
   default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
-id: bartik_powered
-theme: bartik
-region: footer_fifth
+id: stark_powered
+theme: stark
+region: sidebar_first
 weight: 10
 provider: null
 plugin: system_powered_by_block
