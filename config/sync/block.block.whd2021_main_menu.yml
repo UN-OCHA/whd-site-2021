@@ -12,8 +12,8 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: whd2021_main_menu
 theme: whd2021
-region: primary_menu
-weight: 0
+region: header_navigation
+weight: -4
 provider: null
 plugin: 'system_menu_block:main'
 settings:

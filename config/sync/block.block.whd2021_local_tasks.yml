@@ -9,7 +9,7 @@ _core:
 id: whd2021_local_tasks
 theme: whd2021
 region: content
-weight: -40
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:

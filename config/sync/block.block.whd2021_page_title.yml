@@ -9,7 +9,7 @@ _core:
 id: whd2021_page_title
 theme: whd2021
 region: content
-weight: -50
+weight: -3
 provider: null
 plugin: page_title_block
 settings:

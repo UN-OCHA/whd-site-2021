@@ -7,3 +7,10 @@ base theme: stark
 
 # interface translation project: whd
 # interface translation server pattern: themes/custom/whd/translations/%language.po
+
+# Regions
+regions:
+  header_navigation: Header navigation
+  content: Content
+  footer_soft: Soft footer
+  footer_navigation: Footer navigation
