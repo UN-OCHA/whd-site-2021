@@ -1,0 +1,10 @@
+uuid: 51e9a113-5ce3-4e65-bd8b-0b141d20a4d3
+langcode: en
+status: true
+dependencies: {  }
+id: cta_heading
+label: 'CTA Heading'
+icon_uuid: null
+icon_default: null
+description: 'A call-to-action heading.'
+behavior_plugins: {  }

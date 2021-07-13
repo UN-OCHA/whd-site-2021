@@ -1,0 +1,10 @@
+uuid: 6502b0b3-9abc-415f-acee-07160f838d10
+langcode: en
+status: true
+dependencies: {  }
+id: text
+label: Text
+icon_uuid: null
+icon_default: null
+description: 'A basic paragraph of plain text. HTML not allowed.'
+behavior_plugins: {  }

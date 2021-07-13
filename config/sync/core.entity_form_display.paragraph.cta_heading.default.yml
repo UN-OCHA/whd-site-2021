@@ -1,0 +1,30 @@
+uuid: d34d3a0a-985f-4f85-a732-ef116d100d9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta_heading.field_color
+    - field.field.paragraph.cta_heading.field_heading_text
+    - paragraphs.paragraphs_type.cta_heading
+id: paragraph.cta_heading.default
+targetEntityType: paragraph
+bundle: cta_heading
+mode: default
+content:
+  field_color:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_heading_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

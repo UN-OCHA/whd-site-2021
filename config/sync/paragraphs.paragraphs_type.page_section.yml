@@ -1,0 +1,10 @@
+uuid: 522c5806-92d3-40fd-bbe9-953e4cf38830
+langcode: en
+status: true
+dependencies: {  }
+id: page_section
+label: 'Page Section'
+icon_uuid: null
+icon_default: null
+description: 'Define one section of the page. The color and inner contents are totally customizable.'
+behavior_plugins: {  }

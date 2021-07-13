@@ -1,0 +1,10 @@
+uuid: 59cc1e08-f16c-4b5a-9958-fc8a886ac047
+langcode: en
+status: true
+dependencies: {  }
+id: heading
+label: Heading
+icon_uuid: null
+icon_default: null
+description: 'A basic heading. Color is determined by container.'
+behavior_plugins: {  }

@@ -1,0 +1,33 @@
+uuid: 1b6cdb01-af90-4428-b58c-ca31577edcde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_section.field_color
+    - field.field.paragraph.page_section.field_content
+    - paragraphs.paragraphs_type.page_section
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.page_section.default
+targetEntityType: paragraph
+bundle: page_section
+mode: default
+content:
+  field_color:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

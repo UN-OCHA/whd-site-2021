@@ -1,0 +1,23 @@
+uuid: 2f621dc8-3aa5-4423-819b-4cdac5371a94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color
+    - paragraphs.paragraphs_type.cta_heading
+  module:
+    - options
+id: paragraph.cta_heading.field_color
+field_name: field_color
+entity_type: paragraph
+bundle: cta_heading
+label: 'Heading color'
+description: 'Optionally select an override color for this Heading. Default means the container will automatically set the color.'
+required: true
+translatable: true
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

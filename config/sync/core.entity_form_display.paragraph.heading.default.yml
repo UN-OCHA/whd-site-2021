@@ -1,0 +1,30 @@
+uuid: 9a0f83ba-ec19-4cba-96d1-53da957f3680
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.heading.field_color
+    - field.field.paragraph.heading.field_heading_text
+    - paragraphs.paragraphs_type.heading
+id: paragraph.heading.default
+targetEntityType: paragraph
+bundle: heading
+mode: default
+content:
+  field_color:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_heading_text:
+    weight: 0
+    settings:
+      size: 80
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

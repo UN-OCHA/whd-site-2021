@@ -1,0 +1,23 @@
+uuid: 57cb56a6-2b49-4ec0-b737-02e0cc4db786
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color
+    - paragraphs.paragraphs_type.page_section
+  module:
+    - options
+id: paragraph.page_section.field_color
+field_name: field_color
+entity_type: paragraph
+bundle: page_section
+label: 'Section color'
+description: 'Select the background color for this Section. Selecting "Default" will display Gray.'
+required: true
+translatable: true
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string
