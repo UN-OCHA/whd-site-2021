@@ -37,8 +37,9 @@ script:
   # Wait a bit for mysql to be ready.
   - sleep 10
 
-  # Install the site and import existing config.
+  # Install the site, clean a thing, and import existing config.
   - docker exec -it whd2021-travis-site drush -y si standard
+  - docker exec -it whd2021-travis-site drush ev '\Drupal::entityManager()->getStorage("shortcut_set")->load("default")->delete();'
   - docker exec -it whd2021-travis-site drush -y cset system.site uuid $(grep uuid ${TRAVIS_BUILD_DIR}/config/system.site.yml | awk '{print $2}')
   - docker exec -it whd2021-travis-site drush -y cim --source=/srv/www/config
 
