@@ -24,3 +24,8 @@ page-section:
   css:
     theme:
       templates/components/page-section/paragraph--page-section.css: {}
+
+text:
+  css:
+    theme:
+      templates/components/text/paragraph--text.css: {}

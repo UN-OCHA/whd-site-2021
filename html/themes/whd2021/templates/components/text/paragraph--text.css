@@ -1,0 +1,13 @@
+/**
+ * Paragraph: Text
+ */
+
+/**
+ * There's a default width restriction within the Page Section rules so we
+ * follow its selector format to override. this override exists in order to
+ * maintain comfortable reading widths at all times, no matter what size layout
+ * is being displayed.
+ */
+.page-section > .paragraph.paragraph--type--text {
+  max-width: 50ch;
+}
