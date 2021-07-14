@@ -32,6 +32,7 @@
         "drupal/metatag": "1.14.0",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
+        "drupal/redis": "^1.5",
         "drupal/social_auth_hid": "^2.5",
         "drupal/viewsreference": "^1.4",
         "drush/drush": "^10.5.0",

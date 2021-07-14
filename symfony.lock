@@ -137,6 +137,9 @@
     "drupal/pathauto": {
         "version": "1.8.0"
     },
+    "drupal/redis": {
+        "version": "1.5.0"
+    },
     "drupal/social_api": {
         "version": "2.0.0-rc4"
     },
