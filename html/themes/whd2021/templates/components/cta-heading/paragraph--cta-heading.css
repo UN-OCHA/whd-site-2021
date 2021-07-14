@@ -13,3 +13,21 @@
 .cta-heading--color-yellow {
   color: #ffdc4b;
 }
+
+/**
+ * Preventing unsafe colors
+ *
+ * Since the section and heading colors are all driven off of one field with
+ * identical configuration everywhere, it's possible to select a blue-on-blue
+ * or similar color combos. We want to prevent that from happening and force the
+ * color to be the highest-contrast alternative when it does occur.
+ */
+.page-section--color-gray .cta-heading--color-gray {
+  color: #eee;
+}
+.page-section--color-blue .cta-heading--color-blue {
+  color: #fff;
+}
+.page-section--color-yellow .cta-heading--color-yellow {
+  color: #111;
+}
