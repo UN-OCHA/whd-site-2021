@@ -1,0 +1,10 @@
+uuid: b7ef5639-c7da-4906-9089-7599789b55fb
+langcode: en
+status: true
+dependencies: {  }
+id: video_grid
+label: 'Video Grid'
+icon_uuid: null
+icon_default: null
+description: 'A two-column grid for multiple video embeds.'
+behavior_plugins: {  }

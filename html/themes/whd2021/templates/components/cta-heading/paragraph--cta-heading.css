@@ -2,6 +2,7 @@
  * Paragraph: CTA Heading
  */
 .cta-heading {
+  font-family: 'Montserrat', sans-serif;
   font-size: 2em;
   font-weight: 700;
 }

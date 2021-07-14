@@ -24,3 +24,18 @@ page-section:
   css:
     theme:
       templates/components/page-section/paragraph--page-section.css: {}
+
+text:
+  css:
+    theme:
+      templates/components/text/paragraph--text.css: {}
+
+video-embed:
+  css:
+    theme:
+      templates/components/video-embed/paragraph--video-embed.css: {}
+
+video-grid:
+  css:
+    theme:
+      templates/components/video-grid/paragraph--video-grid.css: {}
