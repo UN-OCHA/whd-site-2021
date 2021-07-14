@@ -44,3 +44,9 @@ buildlog.txt
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
+
+# Rubbish from symfony/flex.
+config/bootstrap.php
+config/packages
+config/routes
+config/routes.yaml
