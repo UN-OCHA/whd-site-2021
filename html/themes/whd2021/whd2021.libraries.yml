@@ -1,12 +1,15 @@
+#
+# Global styles: defaults/resets, utilities, header, footer
+#
 global-styling:
   css:
     theme:
       css/styles.css: {}
-  # js:
-    # -
-  # dependencies:
-    # -
+      templates/components/global-footer/global-footer.css: {}
 
+#
+# Components
+#
 cta-heading:
   css:
     theme:
