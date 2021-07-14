@@ -1,0 +1,10 @@
+uuid: bb0848ac-4121-4acc-b659-0262e40aae55
+langcode: en
+status: true
+dependencies: {  }
+id: video_embed
+label: 'Video Embed'
+icon_uuid: null
+icon_default: null
+description: 'A single external Video embed. Use the Video Grid to embed multiple videos in a nicer layout.'
+behavior_plugins: {  }

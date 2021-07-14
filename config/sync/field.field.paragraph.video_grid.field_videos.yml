@@ -1,17 +1,18 @@
-uuid: 3fe3159e-6dea-4044-a445-b50fe41cd2ff
+uuid: fba97555-8a84-40e9-8819-5ead499f1382
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_content
-    - paragraphs.paragraphs_type.page_section
+    - field.storage.paragraph.field_videos
+    - paragraphs.paragraphs_type.video_embed
+    - paragraphs.paragraphs_type.video_grid
   module:
     - entity_reference_revisions
-id: paragraph.page_section.field_content
-field_name: field_content
+id: paragraph.video_grid.field_videos
+field_name: field_videos
 entity_type: paragraph
-bundle: page_section
-label: Content
+bundle: video_grid
+label: Videos
 description: ''
 required: true
 translatable: false
@@ -20,26 +21,26 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 1
+    negate: 0
     target_bundles:
-      page_section: page_section
+      video_embed: video_embed
     target_bundles_drag_drop:
       cta_heading:
-        weight: 5
-        enabled: false
-      heading:
-        weight: 6
-        enabled: false
-      page_section:
-        enabled: true
-        weight: 7
-      text:
         weight: 8
         enabled: false
-      video_embed:
+      heading:
+        weight: 9
+        enabled: false
+      page_section:
+        weight: 10
+        enabled: false
+      text:
         weight: 11
         enabled: false
-      video_grid:
+      video_embed:
+        enabled: true
         weight: 12
+      video_grid:
+        weight: 7
         enabled: false
 field_type: entity_reference_revisions

@@ -1,0 +1,29 @@
+uuid: 5f8b10b0-63df-44f2-9361-0da03dbd3845
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video_grid.field_videos
+    - paragraphs.paragraphs_type.video_grid
+  module:
+    - paragraphs
+id: paragraph.video_grid.default
+targetEntityType: paragraph
+bundle: video_grid
+mode: default
+content:
+  field_videos:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
