@@ -1,0 +1,55 @@
+dist: trusty
+language: php
+
+php:
+  - 7.4
+
+services:
+  - docker
+
+# Make sure we have a recent version of docker.
+addons:
+  apt:
+    packages:
+      - docker-ce
+
+before_script:
+  # Ensure the PHP environment is ready.
+  - phpenv rehash
+
+script:
+  # Get docker information.
+  - docker version
+  - docker-compose version
+
+  # PHP linting
+  - test ! -d ./html/modules/custom || find -L ./html/modules/custom -iregex '.*\.\(php\|module\|inc\|install\)$' -print0 | xargs -0 -n 1 -P 4 php -l
+
+  # Build local image.
+  - make
+
+  # Create the site and mysql containers.
+  - docker-compose -f tests/docker-compose.yml up -d
+
+  # Dump some information about the created containers.
+  - docker ps -a
+
+  # Wait a bit for mysql to be ready.
+  - sleep 10
+
+  # Install the site with the existing config.
+  - docker exec -it whd2021-travis-site drush -y si --existing-config
+
+  # Fake an overrides file.
+  - docker exec -it whd2021-travis-site mkdir -p /mnt/efs/whd2021
+  - docker exec -it whd2021-travis-site touch /mnt/efs/whd2021/hostnames.txt
+
+  # Check coding standards.
+  - docker exec -it -u appuser -w /srv/www whd2021-travis-site ./vendor/bin/phpcs -p --report=full --standard=phpcs.xml ./html/modules/custom
+
+after_success:
+  - echo "The tests completed without errors."
+
+after_failure:
+  - echo "The tests failed. Please check the output above for problems."
+  - ../vendor/bin/drush watchdog:show --extended
