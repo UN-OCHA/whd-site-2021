@@ -7,6 +7,16 @@ global-styling:
   # dependencies:
     # -
 
+cta-heading:
+  css:
+    theme:
+      templates/components/cta-heading/paragraph--cta-heading.css: {}
+
+heading:
+  css:
+    theme:
+      templates/components/heading/paragraph--heading.css: {}
+
 page-section:
   css:
     theme:

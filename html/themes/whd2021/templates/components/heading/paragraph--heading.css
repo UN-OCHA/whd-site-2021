@@ -1,0 +1,12 @@
+/**
+ * Paragraph: Heading
+ */
+.heading {}
+
+.heading--color-blue {
+  color: #00b9f1;
+}
+
+.heading--color-yellow {
+  color: #ffdc4b;
+}

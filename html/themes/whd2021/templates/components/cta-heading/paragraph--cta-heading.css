@@ -1,0 +1,15 @@
+/**
+ * Paragraph: CTA Heading
+ */
+.cta-heading {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.cta-heading--color-blue {
+  color: #00b9f1;
+}
+
+.cta-heading--color-yellow {
+  color: #ffdc4b;
+}
