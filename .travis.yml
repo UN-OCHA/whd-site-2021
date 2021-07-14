@@ -37,12 +37,10 @@ script:
   # Wait a bit for mysql to be ready.
   - sleep 10
 
-  # Install the site with the existing config.
-  - docker exec -it whd2021-travis-site drush -y si --existing-config
-
-  # Fake an overrides file.
-  - docker exec -it whd2021-travis-site mkdir -p /mnt/efs/whd2021
-  - docker exec -it whd2021-travis-site touch /mnt/efs/whd2021/hostnames.txt
+  # Install the site and import existing config.
+  - docker exec -it whd2021-travis-site drush -y si standard
+  - docker exec -it whd2021-travis-site drush -y cset system.site uuid $(grep uuid ${TRAVIS_BUILD_DIR}/config/system.site.yml | awk '{print $2}')
+  - docker exec -it whd2021-travis-site drush -y cim --source=/srv/www/config
 
   # Check coding standards.
   # - docker exec -it -u appuser -w /srv/www whd2021-travis-site ./vendor/bin/phpcs -p --report=full --standard=phpcs.xml ./html/modules/custom
