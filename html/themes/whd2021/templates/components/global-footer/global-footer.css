@@ -1,0 +1,34 @@
+/**
+ * Global page footer
+ */
+.global-footer {
+  background: #3c3c3c;
+  color: #ddd;
+  text-align: center;
+}
+
+.global-footer ul {
+  margin: 0;
+  padding: 1rem;
+  list-style-type: none;
+}
+
+.global-footer a {
+  display: block;
+  color: #fff;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+}
+
+.global-footer p {
+  margin: 0;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .global-footer ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+}

@@ -1,5 +1,11 @@
-/* Global Styles for WHD 2021 */
+/**
+ * Global Styles for WHD 2021
+ */
 
+
+/**
+ * Browser defaults
+ */
 html {
   font-size: 16px;
   margin: 0;
@@ -12,6 +18,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/**
+ * Utility class for vertical rhythm within a container.
+ */
 .flow > * + * {
   margin-top: var(--flow-space, 1em);
 }
