@@ -4,12 +4,15 @@
 .page-section {
   padding: 2em;
   background: #3c3c3c;
+  color: #eee;
 }
 
 .page-section--color-blue {
   background: #00b9f1;
+  color: #111;
 }
 
 .page-section--color-yellow {
   background: #ffdc4b;
+  color: #111;
 }
