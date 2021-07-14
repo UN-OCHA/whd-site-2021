@@ -1,4 +1,4 @@
-uuid: 6502b0b3-9abc-415f-acee-07160f838d10
+uuid: 926692f1-0b53-45ce-98d5-3799fca21cfb
 langcode: en
 status: true
 dependencies: {  }
@@ -6,5 +6,5 @@ id: text
 label: Text
 icon_uuid: null
 icon_default: null
-description: 'A basic paragraph of plain text. HTML not allowed.'
+description: 'Long-form text with minimal WYSIWYG styling.'
 behavior_plugins: {  }
