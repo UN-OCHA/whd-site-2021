@@ -15,4 +15,4 @@ regions:
   footer_navigation: Footer navigation
 
 libraries:
-- whd/global-styling
+- whd2021/global-styling
