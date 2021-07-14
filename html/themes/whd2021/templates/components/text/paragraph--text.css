@@ -9,5 +9,5 @@
  * is being displayed.
  */
 .page-section > .paragraph.paragraph--type--text {
-  max-width: 50ch;
+  max-width: 60ch;
 }

@@ -1,7 +1,9 @@
 /**
  * Paragraph: Heading
  */
-.heading {}
+.heading {
+  font-family: 'Oswald', sans-serif;
+}
 
 .heading--color-blue {
   color: #00b9f1;
@@ -10,6 +12,17 @@
 .heading--color-yellow {
   color: #ffdc4b;
 }
+
+/**
+ * There's a default width restriction within the Page Section rules so we
+ * follow its selector format to override. this override exists in order to
+ * maintain comfortable reading widths at all times, no matter what size layout
+ * is being displayed.
+ */
+.page-section > .paragraph.paragraph--type--heading {
+  max-width: 38ch;
+}
+
 
 /**
  * Preventing unsafe colors
