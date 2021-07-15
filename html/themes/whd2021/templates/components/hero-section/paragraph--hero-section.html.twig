@@ -51,7 +51,7 @@
 {% set bgUrl = content.field_photo.0.value %}
 
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+  <div{{ attributes.addClass(classes).setAttribute('style', 'background-image: url(' ~ content.field_photo|render|striptags|trim ~ ');') }}>
     {% block content %}
       {{ content.field_heading_text }}
 

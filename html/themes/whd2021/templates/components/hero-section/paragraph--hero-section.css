@@ -4,6 +4,11 @@
 .hero-section {
   text-align: center;
   position: relative;
+
+  /* the background-image must NOT be set here! It is supplied dynamically by
+  the twig template */
+  background-size: cover;
+  background-position: center top;
 }
 
 .hero-section__title {
