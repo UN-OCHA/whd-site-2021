@@ -27,6 +27,11 @@ heading:
     theme:
       templates/components/heading/paragraph--heading.css: {}
 
+hero-section:
+  css:
+    theme:
+      templates/components/hero-section/paragraph--hero-section.css: {}
+
 page-section:
   css:
     theme:

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.hero_section
     - paragraphs.paragraphs_type.page_section
   module:
     - entity_reference_revisions
@@ -23,6 +24,7 @@ settings:
     negate: 1
     target_bundles:
       page_section: page_section
+      hero_section: hero_section
     target_bundles_drag_drop:
       cta_heading:
         weight: 5
@@ -30,6 +32,9 @@ settings:
       heading:
         weight: 6
         enabled: false
+      hero_section:
+        enabled: true
+        weight: 10
       page_section:
         enabled: true
         weight: 7

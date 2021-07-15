@@ -1,0 +1,35 @@
+/**
+ * Paragraph: Hero Section
+ */
+.hero-section {
+  text-align: center;
+  position: relative;
+}
+
+.hero-section__title {
+  display: block;
+  margin: 0 4ch;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 570px) {
+  .hero-section__title {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .hero-section__title {
+    font-size: 2.75rem;
+  }
+}
+
+.hero-section__highlight {
+  padding: .25rem;
+  background: #00b9f1;
+  box-shadow: 10px 0 0 #00b9f1, -10px 0 0 #00b9f1;
+  color: white;
+}

@@ -102,8 +102,8 @@
  * JS toggling
  *
  * If JS is present to manipulate the menu, we use `visibility` to prevent focus
- * when the menu is shut. When it is expanded, the visibility gets oggled as
- * well, allowing inner links to be focused by keyboard
+ * when the menu is shut. When it is expanded, the visibility gets toggled as
+ * well, allowing inner links to be focused by keyboard.
  */
 .js .main-nav .main-nav__contents {
   visibility: hidden;
