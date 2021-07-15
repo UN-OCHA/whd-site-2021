@@ -1,0 +1,48 @@
+version: "2.2"
+
+networks:
+  default:
+
+volumes:
+  whd2021-site-public:
+  whd2021-site-private:
+
+services:
+  mysql:
+    image: unocha/alpine-mysql:10.4.13-r0-202006-01
+    hostname: whd2021-travis-mysql
+    container_name: whd2021-travis-mysql
+    environment:
+      - MYSQL_DB=whd2021
+      - MYSQL_USER=whd2021
+      - MYSQL_PASS=whd2021
+    networks:
+      - default
+
+  drupal:
+    image: unocha/whd2021-site:local
+    hostname: whd2021-travis-site
+    container_name: whd2021-travis-site
+    volumes:
+      - "./settings:/srv/www/shared/settings:ro"
+      # Mount volumes for the private and public files.
+      - "whd2021-site-public:/srv/www/html/sites/default/files:rw"
+      - "whd2021-site-private:/srv/www/html/sites/default/private:rw"
+      # Mount the folders needed for the tests.
+      - "../tests:/srv/www/tests:ro"
+      - "../phpcs.xml:/srv/www/phpcs.xml:ro"
+    environment:
+      - TERM=xterm
+      - ENVIRONMENT=dev
+      - NGINX_SERVERNAME=whd2021-travis-site,localhost,127.0.0.1
+      - NGINX_OVERRIDE_PROTOCOL=HTTP,whd2021-travis-site,localhost,127.0.0.1
+      - DRUSH_OPTIONS_URI=http://whd2021-travis-site
+      - DRUPAL_DB_DATABASE=whd2021
+      - DRUPAL_DB_USERNAME=whd2021
+      - DRUPAL_DB_PASSWORD=whd2021
+      - DRUPAL_DB_HOST=mysql
+      - DRUPAL_DB_DRIVER=mysql
+    networks:
+      - default
+    depends_on:
+      - mysql
