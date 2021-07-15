@@ -2,6 +2,69 @@
  * Global page header
  */
 .global-header {
+  /* layout for sub-components */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  position: relative; /* for nav dropdown */
+  z-index: 10;
+
+  /* visual */
+  padding: 0 1rem;
   background: white;
   color: black;
+}
+
+.global-header #block-whd2021-account-menu li {
+  display: block;
+}
+
+.global-header #block-whd2021-main-menu li {
+  display: block;
+}
+
+/**
+ * Main nav: basic behavior is a top-edge, off-canvas hamburger.
+ */
+.main-nav {}
+
+.main-nav__contents {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  transition: transform .3333s ease-in-out;
+
+  background: #ffdc4b;
+  color: #3c3c3c;
+  margin: 0;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .main-nav__contents {
+    transition: none;
+  }
+}
+
+.main-nav.is--expanded .main-nav__contents {
+  transform: translateY(100%);
+}
+
+.main-nav__contents a {
+  display: block;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+  .main-nav__contents a {
+    font-size: 1.625rem;
+  }
 }
