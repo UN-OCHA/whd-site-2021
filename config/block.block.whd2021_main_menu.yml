@@ -13,7 +13,7 @@ _core:
 id: whd2021_main_menu
 theme: whd2021
 region: header_navigation
-weight: -4
+weight: -2
 provider: null
 plugin: 'system_menu_block:main'
 settings:
