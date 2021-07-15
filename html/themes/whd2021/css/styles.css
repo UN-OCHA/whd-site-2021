@@ -19,6 +19,25 @@ body {
 }
 
 /**
+ * Global skip-to-content link
+ */
+.skip-link {
+  background: black;
+  color: white;
+  border-radius: 0 0 3px 3px;
+  padding: 0.5rem;
+}
+
+.skip-link.visually-hidden.focusable:focus  {
+  outline: none;
+  position: absolute !important; /* have to override core's !important */
+  top: 0;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%);
+}
+
+/**
  * Utility class for vertical rhythm within a container.
  */
 .flow > * + * {

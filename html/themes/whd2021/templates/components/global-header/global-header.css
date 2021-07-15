@@ -1,0 +1,125 @@
+/**
+ * Global page header
+ */
+.global-header {
+  /* layout for sub-components */
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-between;
+  position: relative; /* for nav dropdown */
+
+  /* visual */
+  padding: 1rem;
+  background: white;
+  color: black;
+}
+
+.global-header #block-whd2021-account-menu li {
+  display: block;
+}
+
+.global-header #block-whd2021-main-menu li {
+  display: block;
+}
+
+/**
+ * Main nav: basic behavior is a top-edge, off-canvas hamburger.
+ */
+.main-nav {}
+
+.main-nav__toggle {
+  position: relative;
+  z-index: 10;
+
+  width: 36px;
+  height: 32px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.main-nav__toggle::after {
+  display: block;
+  content: '☰';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 2rem;
+}
+
+.main-nav__contents {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  transition: transform .3333s ease-in-out;
+
+  background: #ffdc4b;
+  color: #3c3c3c;
+  margin: 0;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.main-nav__contents a {
+  display: block;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.8;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 600px) {
+  .main-nav__contents a {
+    font-size: 1.625rem;
+  }
+}
+
+/**
+ * Focus styles for toggle+links
+ */
+.main-nav__toggle:focus,
+.main-nav__contents a:focus {
+  outline: none;
+  background: black;
+  color: white;
+}
+
+.is--expanded .main-nav__toggle:focus,
+.is--expanded .main-nav__contents a:focus {
+  color: #ffdc4b;
+}
+
+
+/**
+ * JS toggling
+ *
+ * If JS is present to manipulate the menu, we use `visibility` to prevent focus
+ * when the menu is shut. When it is expanded, the visibility gets oggled as
+ * well, allowing inner links to be focused by keyboard
+ */
+.js .main-nav .main-nav__contents {
+  visibility: hidden;
+}
+.js .main-nav.is--expanded .main-nav__contents {
+  visibility: visible;
+  transform: translateY(100%);
+}
+
+/**
+ * Reduced motion
+ *
+ * If the user prefers reduced motion, we remove the transition entirely.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .main-nav__contents {
+    transition: none;
+  }
+}

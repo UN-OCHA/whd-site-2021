@@ -15,4 +15,7 @@ regions:
   footer_navigation: Footer navigation
 
 libraries:
+  - core/drupal
+  - core/jquery
+  - core/jquery.once
   - whd2021/global-styling
