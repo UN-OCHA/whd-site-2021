@@ -4,7 +4,7 @@
 .global-header {
   /* layout for sub-components */
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row-reverse nowrap;
   justify-content: space-between;
   position: relative; /* for nav dropdown */
 
