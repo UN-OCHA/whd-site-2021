@@ -7,6 +7,12 @@ global-styling:
       css/styles.css: {}
       templates/components/global-header/global-header.css: {}
       templates/components/global-footer/global-footer.css: {}
+  js:
+    templates/components/global-header/global-header.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
 
 #
 # Components

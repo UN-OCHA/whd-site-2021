@@ -43,6 +43,8 @@
   <h2{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h2>
   {{ title_suffix }}
 
+  <button class="main-nav__toggle" type="button" aria-expanded="false"><span class="visually-hidden">Toggle navigation</span></button>
+
   {# Menu. #}
   {% block content %}
     {{ content }}

@@ -7,7 +7,6 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   position: relative; /* for nav dropdown */
-  z-index: 10;
 
   /* visual */
   padding: 0 1rem;
@@ -27,6 +26,24 @@
  * Main nav: basic behavior is a top-edge, off-canvas hamburger.
  */
 .main-nav {}
+
+.main-nav__toggle {
+  position: relative;
+  z-index: 10;
+
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.main-nav__toggle::after {
+  content: '☰';
+  font-size: 2rem;
+}
 
 .main-nav__contents {
   position: absolute;
