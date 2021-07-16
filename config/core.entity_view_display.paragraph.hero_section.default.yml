@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.hero_section.field_heading_text
+    - field.field.paragraph.hero_section.field_justify_content
     - field.field.paragraph.hero_section.field_photo
     - paragraphs.paragraphs_type.hero_section
   module:
     - image
+    - options
 id: paragraph.hero_section.default
 targetEntityType: paragraph
 bundle: hero_section
@@ -20,6 +22,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_justify_content:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
     region: content
   field_photo:
     weight: 2

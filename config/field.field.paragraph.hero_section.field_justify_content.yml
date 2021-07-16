@@ -1,0 +1,23 @@
+uuid: efaca351-8a11-4eb1-b890-c6956fd13dcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_justify_content
+    - paragraphs.paragraphs_type.hero_section
+  module:
+    - options
+id: paragraph.hero_section.field_justify_content
+field_name: field_justify_content
+entity_type: paragraph
+bundle: hero_section
+label: Alignment
+description: 'Choose how the content is aligned with the Hero section. '
+required: true
+translatable: false
+default_value:
+  -
+    value: center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

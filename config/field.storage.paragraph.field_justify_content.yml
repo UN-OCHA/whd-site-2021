@@ -1,0 +1,33 @@
+uuid: b72b220a-d3ba-4493-aff8-a1f83253fb14
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_justify_content
+field_name: field_justify_content
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: flex-start
+      label: 'Group at the top'
+    -
+      value: flex-end
+      label: 'Group at the bottom'
+    -
+      value: center
+      label: 'Group in the center'
+    -
+      value: space-evenly
+      label: 'Distribute evenly'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

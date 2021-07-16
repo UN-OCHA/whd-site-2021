@@ -2,13 +2,41 @@
  * Paragraph: Hero Section
  */
 .hero-section {
-  text-align: center;
+  /* inner layout for Hero's contents */
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 75vw;
   position: relative;
 
-  /* background-image is supplied dynamically by the twig template */
+  /* general styling */
+  text-align: center;
+
+  /**
+   * Do NOT set background-image. It's supplied by Twig via inline CSS.
+   * @see html/themes/whd2021/templates/components/hero-section/paragraph--hero-section.html.twig
+   */
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
+}
+
+.hero-section--justify-content--flex-start {
+  justify-content: flex-start;
+}
+.hero-section--justify-content--flex-end {
+  justify-content: flex-end;
+}
+.hero-section--justify-content--center {
+  justify-content: center;
+}
+.hero-section--justify-content--space-around {
+  justify-content: space-around;
+}
+.hero-section--justify-content--space-between {
+  justify-content: space-between;
+}
+.hero-section--justify-content--space-evenly {
+  justify-content: space-evenly;
 }
 
 .hero-section__title {
@@ -27,6 +55,10 @@
 }
 
 @media screen and (min-width: 960px) {
+  .hero-section {
+    min-height: 66vw;
+  }
+
   .hero-section__title {
     font-size: 2.75rem;
   }

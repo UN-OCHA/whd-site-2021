@@ -46,6 +46,7 @@
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
     'hero-section',
+    'hero-section--justify-content--' ~ content.field_justify_content|render|striptags|trim|clean_class,
   ]
 %}
 {% set bgUrl = content.field_photo.0.value %}
@@ -55,7 +56,7 @@
     {% block content %}
       {{ content.field_heading_text }}
 
-      {{ content|without('field_photo', 'field_heading_text') }}
+      {{ content|without('field_photo', 'field_heading_text', 'field_justify_content') }}
     {% endblock %}
   </div>
 {% endblock paragraph %}

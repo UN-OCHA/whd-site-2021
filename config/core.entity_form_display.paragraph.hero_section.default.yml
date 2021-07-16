@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.hero_section.field_heading_text
+    - field.field.paragraph.hero_section.field_justify_content
     - field.field.paragraph.hero_section.field_photo
     - image.style.thumbnail
     - paragraphs.paragraphs_type.hero_section
@@ -21,6 +22,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_justify_content:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_photo:
     weight: 2
