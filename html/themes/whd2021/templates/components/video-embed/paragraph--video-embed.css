@@ -33,4 +33,9 @@
 .video-embed__caption {
   padding-top: 1rem;
   font-size: 0.9em;
+
+  /* if the video embed is not within a grid, help keep the caption readable by
+  using the same max-width as a Text paragraph. */
+  max-width: 60ch;
+  margin: 0 auto;
 }
