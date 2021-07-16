@@ -1,0 +1,19 @@
+uuid: e261c34d-0cd4-430d-9cf8-03e2f082a389
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_text
+    - paragraphs.paragraphs_type.cta_button
+id: paragraph.cta_button.field_heading_text
+field_name: field_heading_text
+entity_type: paragraph
+bundle: cta_button
+label: 'Button text'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.hero_section.field_content_hero
     - field.field.paragraph.hero_section.field_heading_text
     - field.field.paragraph.hero_section.field_justify_content
     - field.field.paragraph.hero_section.field_photo
@@ -10,11 +11,30 @@ dependencies:
     - paragraphs.paragraphs_type.hero_section
   module:
     - image
+    - paragraphs
 id: paragraph.hero_section.default
 targetEntityType: paragraph
 bundle: hero_section
 mode: default
 content:
+  field_content_hero:
+    type: paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    region: content
   field_heading_text:
     weight: 1
     settings:

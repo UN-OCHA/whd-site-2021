@@ -1,0 +1,52 @@
+uuid: b3a9ee3d-4052-46f2-ad3e-7aa7817ec1be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_hero
+    - paragraphs.paragraphs_type.cta_button
+    - paragraphs.paragraphs_type.hero_section
+  module:
+    - entity_reference_revisions
+id: paragraph.hero_section.field_content_hero
+field_name: field_content_hero
+entity_type: paragraph
+bundle: hero_section
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      cta_button: cta_button
+    target_bundles_drag_drop:
+      cta_button:
+        enabled: true
+        weight: 9
+      cta_heading:
+        weight: 10
+        enabled: false
+      heading:
+        weight: 11
+        enabled: false
+      hero_section:
+        weight: 12
+        enabled: false
+      page_section:
+        weight: 13
+        enabled: false
+      text:
+        weight: 14
+        enabled: false
+      video_embed:
+        weight: 15
+        enabled: false
+      video_grid:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions
