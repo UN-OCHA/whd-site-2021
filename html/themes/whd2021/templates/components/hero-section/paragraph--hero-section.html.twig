@@ -47,6 +47,7 @@
     not paragraph.isPublished() ? 'paragraph--unpublished',
     'hero-section',
     'hero-section--justify-content--' ~ content.field_justify_content|render|striptags|trim|clean_class,
+    'flow',
   ]
 %}
 {% set bgUrl = content.field_photo.0.value %}
