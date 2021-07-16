@@ -1,0 +1,10 @@
+uuid: 6cdc38ba-bbe5-4d78-adab-b0d0ea555298
+langcode: en
+status: true
+dependencies: {  }
+id: cta_button
+label: 'CTA Button'
+icon_uuid: null
+icon_default: null
+description: 'A button to act as a Call To Action within a particular section.'
+behavior_plugins: {  }

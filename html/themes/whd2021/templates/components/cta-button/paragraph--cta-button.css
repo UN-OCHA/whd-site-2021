@@ -1,0 +1,57 @@
+/**
+ * Paragraph:  CTA Button
+ */
+.cta-button {
+  padding-top: 1rem;
+}
+
+.cta-button a {
+  /* Layout for inner contents. Some buttons can have images embedded */
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  /* Typography + visual styles */
+  padding: .5em 1.5em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+
+  /* Colors can be overridden by a modifier class below */
+  background: #3c3c3c;
+  color: white;
+}
+
+.cta-button--color-gray a {
+  background: #3c3c3c;
+  color: white;
+}
+
+.cta-button--color-blue a {
+  background: #00b9f1;
+  color: white;
+}
+
+.cta-button--color-yellow a {
+  background: #ffdc4b;
+  color: #3c3c3c;
+}
+
+@media screen and (min-width: 960px) {
+  .cta-button a {
+    font-size: 1.5rem;
+  }
+}
+
+.cta-button__image {
+  line-height: 0;
+}
+
+.cta-button__text + .cta-button__image {
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .cta-button__text + .cta-button__image {
+  margin-right: 0.5rem;
+}

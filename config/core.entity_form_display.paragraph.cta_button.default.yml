@@ -1,0 +1,52 @@
+uuid: af27e849-8586-4f1f-a05f-39ca689dc897
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta_button.field_button_image
+    - field.field.paragraph.cta_button.field_color
+    - field.field.paragraph.cta_button.field_heading_text
+    - field.field.paragraph.cta_button.field_url
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.cta_button
+  module:
+    - image
+    - link
+id: paragraph.cta_button.default
+targetEntityType: paragraph
+bundle: cta_button
+mode: default
+content:
+  field_button_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_color:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_heading_text:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_url:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

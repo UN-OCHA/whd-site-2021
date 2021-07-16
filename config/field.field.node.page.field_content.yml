@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.page
+    - paragraphs.paragraphs_type.hero_section
     - paragraphs.paragraphs_type.page_section
   module:
     - entity_reference_revisions
@@ -24,6 +25,7 @@ settings:
     negate: 0
     target_bundles:
       page_section: page_section
+      hero_section: hero_section
     target_bundles_drag_drop:
       cta_heading:
         weight: 5
@@ -31,10 +33,19 @@ settings:
       heading:
         weight: 6
         enabled: false
+      hero_section:
+        enabled: true
+        weight: 10
       page_section:
         enabled: true
         weight: 7
       text:
         weight: 8
+        enabled: false
+      video_embed:
+        weight: 13
+        enabled: false
+      video_grid:
+        weight: 14
         enabled: false
 field_type: entity_reference_revisions

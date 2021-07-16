@@ -1,0 +1,10 @@
+uuid: 4d39fa1e-5888-4371-a4c9-858a5493337e
+langcode: en
+status: true
+dependencies: {  }
+id: hero_section
+label: 'Hero Section'
+icon_uuid: null
+icon_default: null
+description: 'A section featuring a full-bleed image, a title, and other optional elements.'
+behavior_plugins: {  }

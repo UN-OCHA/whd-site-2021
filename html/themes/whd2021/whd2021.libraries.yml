@@ -17,6 +17,11 @@ global-styling:
 #
 # Components
 #
+cta-button:
+  css:
+    theme:
+      templates/components/cta-button/paragraph--cta-button.css: {}
+
 cta-heading:
   css:
     theme:
@@ -26,6 +31,11 @@ heading:
   css:
     theme:
       templates/components/heading/paragraph--heading.css: {}
+
+hero-section:
+  css:
+    theme:
+      templates/components/hero-section/paragraph--hero-section.css: {}
 
 page-section:
   css:
