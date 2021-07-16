@@ -30,26 +30,19 @@ settings:
             - BulletedList
             - NumberedList
         -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-        -
           name: 'Block Formatting'
           items:
-            - Format
-        -
-          name: Tools
-          items:
-            - Source
+            - Styles
   plugins:
     stylescombo:
-      styles: ''
+      styles: "span.text--white|White text\r\nspan.text--gray|Gray text\r\nspan.text--blue|Blue text\r\nspan.text--yellow|Yellow text"
+    language:
+      language_list: un
 image_upload:
-  status: true
+  status: false
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null
