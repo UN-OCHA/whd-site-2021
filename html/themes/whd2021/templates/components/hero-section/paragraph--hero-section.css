@@ -5,10 +5,10 @@
   text-align: center;
   position: relative;
 
-  /* the background-image must NOT be set here! It is supplied dynamically by
-  the twig template */
+  /* background-image is supplied dynamically by the twig template */
   background-size: cover;
-  background-position: center top;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .hero-section__title {
