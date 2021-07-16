@@ -17,6 +17,11 @@ global-styling:
 #
 # Components
 #
+cta-button:
+  css:
+    theme:
+      templates/components/cta-button/paragraph--cta-button.css: {}
+
 cta-heading:
   css:
     theme:
