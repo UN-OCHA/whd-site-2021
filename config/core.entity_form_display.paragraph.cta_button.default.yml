@@ -3,17 +3,28 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.cta_button.field_button_image
     - field.field.paragraph.cta_button.field_color
     - field.field.paragraph.cta_button.field_heading_text
     - field.field.paragraph.cta_button.field_url
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.cta_button
   module:
+    - image
     - link
 id: paragraph.cta_button.default
 targetEntityType: paragraph
 bundle: cta_button
 mode: default
 content:
+  field_button_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_color:
     weight: 0
     settings: {  }

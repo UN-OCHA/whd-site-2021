@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.cta_button.field_button_image
     - field.field.paragraph.cta_button.field_color
     - field.field.paragraph.cta_button.field_heading_text
     - field.field.paragraph.cta_button.field_url
     - paragraphs.paragraphs_type.cta_button
   module:
+    - image
     - link
     - options
 id: paragraph.cta_button.default
@@ -15,6 +17,15 @@ targetEntityType: paragraph
 bundle: cta_button
 mode: default
 content:
+  field_button_image:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_color:
     weight: 0
     label: hidden

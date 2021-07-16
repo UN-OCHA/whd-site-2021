@@ -6,13 +6,19 @@
 }
 
 .cta-button a {
-  display: inline-block;
+  /* Layout for inner contents. Some buttons can have images embedded */
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  /* Typography + visual styles */
   padding: .5em 1.5em;
   font-family: 'Oswald', sans-serif;
   font-size: 1.2rem;
   text-decoration: none;
 
-  /* colors can be overridden by a modifier class below */
+  /* Colors can be overridden by a modifier class below */
   background: #3c3c3c;
   color: white;
 }
@@ -36,4 +42,16 @@
   .cta-button a {
     font-size: 1.5rem;
   }
+}
+
+.cta-button__image {
+  line-height: 0;
+}
+
+.cta-button__text + .cta-button__image {
+  margin-left: 0.5rem;
+}
+
+[dir="rtl"] .cta-button__text + .cta-button__image {
+  margin-right: 0.5rem;
 }
