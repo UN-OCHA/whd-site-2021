@@ -7,6 +7,7 @@
   flex-flow: row-reverse nowrap;
   justify-content: space-between;
   position: relative; /* for nav dropdown */
+  z-index: 20;
 
   /* visual */
   padding: 1rem;
