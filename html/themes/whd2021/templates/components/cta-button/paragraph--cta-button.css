@@ -1,9 +1,7 @@
 /**
  * Paragraph:  CTA Button
  */
-.cta-button {
-  padding-top: 1rem;
-}
+.cta-button {}
 
 .cta-button a {
   /* Layout for inner contents. Some buttons can have images embedded */
