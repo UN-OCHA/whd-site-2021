@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Overrides html/core/modules/system/templates/page.html.twig
+ * Overrides html/themes/whd2021/templates/page.html.twig
  *
  * The doctype, html, head and body tags are not in this template. Instead they
  * can be found in the html.html.twig template in this directory.
@@ -45,7 +45,8 @@
  * @ingroup themeable
  */
 #}
-<div class="layout-container">
+{{ attach_library('whd2021/front-page') }}
+<div class="layout-container front-page">
 
   <header class="global-header" role="banner">
     {{ page.header_navigation }}
@@ -55,6 +56,14 @@
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
+      <div class="front-page__logos">
+        <div class="front-page__logo logo--whd" style="background-image: url(/themes/whd2021/img/whd-logo/whd-blue-{{ current_language }}@2x.png); ">
+          <span class="visually-hidden">{{ 'World Humanitarian Day'|trans }}</span>
+        </div>
+        <div class="front-page__logo logo--thr" style="background-image: url(/themes/whd2021/img/thr-logo/thr-{{ current_language }}.png); ">
+          <span class="visually-hidden">{{ 'The Human Race'|trans }}</span>
+        </div>
+      </div>
       {{ page.content }}
     </div>{# /.layout-content #}
   </main>

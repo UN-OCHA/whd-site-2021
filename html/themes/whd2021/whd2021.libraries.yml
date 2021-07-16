@@ -27,6 +27,11 @@ cta-heading:
     theme:
       templates/components/cta-heading/paragraph--cta-heading.css: {}
 
+front-page:
+  css:
+    theme:
+      templates/components/front-page/front-page.css: {}
+
 heading:
   css:
     theme:
