@@ -1,0 +1,24 @@
+/**
+ * Paragraph: Article Teaser
+ */
+.article-teaser {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.article-teaser__heading {
+  margin: 1rem 0 0 0;
+
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.article-teaser__photo {
+  order: -1;
+}
+
+.article-teaser__caption a {
+  color: inherit;
+  font-weight: 700;
+}

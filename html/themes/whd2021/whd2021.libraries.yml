@@ -17,6 +17,11 @@ global-styling:
 #
 # Components
 #
+article-teaser:
+  css:
+    theme:
+      templates/components/article-teaser/paragraph--article-teaser.css: {}
+
 cta-button:
   css:
     theme:
