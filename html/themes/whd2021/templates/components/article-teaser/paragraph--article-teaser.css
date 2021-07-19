@@ -15,7 +15,20 @@
 }
 
 .article-teaser__photo {
+  /* Photos appear first in visual order */
   order: -1;
+}
+
+.article-teaser__photo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-teaser__caption {
+  /* if the Article Teaser is not within a grid, keep the caption readable by
+  using the same max-width as a Text paragraph. */
+  max-width: 60ch;
+  margin: 1rem auto;
 }
 
 .article-teaser__caption a {
