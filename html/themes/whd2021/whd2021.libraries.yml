@@ -17,6 +17,11 @@ global-styling:
 #
 # Components
 #
+article-teaser:
+  css:
+    theme:
+      templates/components/article-teaser/paragraph--article-teaser.css: {}
+
 cta-button:
   css:
     theme:
@@ -46,6 +51,11 @@ page-section:
   css:
     theme:
       templates/components/page-section/paragraph--page-section.css: {}
+
+page-title:
+  css:
+    theme:
+      templates/components/page-title/paragraph--page-title.css: {}
 
 text:
   css:

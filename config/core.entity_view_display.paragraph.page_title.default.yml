@@ -1,0 +1,22 @@
+uuid: 01b8550d-6d55-4c62-847d-ceaa8d2534d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_title.field_color
+    - paragraphs.paragraphs_type.page_title
+  module:
+    - options
+id: paragraph.page_title.default
+targetEntityType: paragraph
+bundle: page_title
+mode: default
+content:
+  field_color:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden: {  }

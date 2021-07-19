@@ -1,0 +1,10 @@
+uuid: fd23869b-7619-4d55-837c-07ef274b4b96
+langcode: en
+status: true
+dependencies: {  }
+id: article_teaser
+label: 'Article Teaser'
+icon_uuid: null
+icon_default: null
+description: 'A rich teaser for an page outside this site.'
+behavior_plugins: {  }

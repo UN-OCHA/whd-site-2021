@@ -38,19 +38,28 @@
  * @ingroup themeable
  */
 #}
-{{ attach_library('whd2021/text') }}
+{{ attach_library('whd2021/article-teaser') }}
 {%
   set classes = [
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
+    'article-teaser',
+    'flow',
   ]
 %}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content }}
+      <h3 class="article-teaser__heading">{{ content.field_heading_text|render|striptags|trim }}</h3>
+      <p class="article-teaser__caption">
+        {{ content.field_video_caption|render|striptags|trim }}
+        <a href="{{ content.field_url|render|striptags|trim }}">[{{ 'read more'|trans }}]</a>
+      </p>
+      <a class="article-teaser__photo" href="{{ content.field_url|render|striptags|trim }}">
+        {{ content.field_photo }}
+      </a>
     {% endblock %}
   </div>
 {% endblock paragraph %}

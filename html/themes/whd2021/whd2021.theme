@@ -27,4 +27,29 @@ function whd2021_preprocess_paragraph(&$variables) {
   // Current language
   $paragraph_language = $paragraph->getParentEntity()->language()->getId();
   $variables['paragraph_language'] = $paragraph_language;
+
+  // Use the helper function to produce the page title compatible with cache.
+  $placeholder_title = array(
+    '#lazy_builder' => ['__whd2021_paragraphs_title_placeholder', ['page_title']],
+    '#create_placeholder' => TRUE,
+  );
+  $variables['title'] = $placeholder_title;
+}
+
+/**
+ * Helper function to provide Page Title to Paragraphs.
+ *
+ * @see https://drupal.stackexchange.com/a/212060
+ */
+function __whd2021_paragraphs_title_placeholder($page_title) {
+  // If you attempt to pass in $page_title from preprocess it will be cached!
+  $request = \Drupal::request();
+  $route_match = \Drupal::routeMatch();
+  $page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+
+  $title_array = array(
+    '#markup' => $page_title,
+  );
+
+  return $title_array;
 }
