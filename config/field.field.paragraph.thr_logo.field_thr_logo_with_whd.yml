@@ -1,0 +1,23 @@
+uuid: 59f731ff-f880-4f55-9437-85f32404f35b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_thr_logo_with_whd
+    - paragraphs.paragraphs_type.thr_logo
+id: paragraph.thr_logo.field_thr_logo_with_whd
+field_name: field_thr_logo_with_whd
+entity_type: paragraph
+bundle: thr_logo
+label: 'Include WHD in logo?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

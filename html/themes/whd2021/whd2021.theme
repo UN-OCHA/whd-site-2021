@@ -8,3 +8,23 @@ function whd2021_preprocess_page(&$variables) {
   $current_language = \Drupal::languageManager()->getCurrentLanguage()->getId();
   $variables['current_language'] = $current_language;
 }
+
+/**
+ * Implements template_preprocess_paragraph().
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An array of elements to display in view mode.
+ *   - paragraph: The paragraph object.
+ *   - view_mode: View mode; e.g., 'full', 'teaser'...
+ */
+function whd2021_preprocess_paragraph(&$variables) {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = $variables['paragraph'];
+  // Get the parent bundle.
+  $parentBundle = $paragraph->getParentEntity()->bundle();
+
+  // Current language
+  $paragraph_language = $paragraph->getParentEntity()->language()->getId();
+  $variables['paragraph_language'] = $paragraph_language;
+}

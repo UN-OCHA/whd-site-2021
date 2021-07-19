@@ -1,0 +1,10 @@
+uuid: 75977b8a-4bec-452d-a7b3-2c43eb49f9d9
+langcode: en
+status: true
+dependencies: {  }
+id: thr_logo
+label: 'THR Logo'
+icon_uuid: null
+icon_default: null
+description: 'The logo for TheHumanRace. Some aspects can be configured.'
+behavior_plugins: {  }

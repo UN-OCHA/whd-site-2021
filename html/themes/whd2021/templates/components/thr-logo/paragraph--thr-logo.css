@@ -1,0 +1,12 @@
+/**
+ * Paragraph: THR Logo
+ */
+.thr-logo {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.thr-logo img {
+  max-width: 100%;
+}
