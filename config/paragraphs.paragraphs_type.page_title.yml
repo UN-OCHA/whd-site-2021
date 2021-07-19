@@ -1,0 +1,10 @@
+uuid: 4557816f-d340-4fda-afb2-c2ab296f9211
+langcode: en
+status: true
+dependencies: {  }
+id: page_title
+label: 'Page Title'
+icon_uuid: null
+icon_default: null
+description: 'Place the Page Title anywhere within the content section.'
+behavior_plugins: {  }

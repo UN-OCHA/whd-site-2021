@@ -38,19 +38,21 @@
  * @ingroup themeable
  */
 #}
-{{ attach_library('whd2021/text') }}
+{{ attach_library('whd2021/page-title') }}
 {%
   set classes = [
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
+    'page-title',
+    'page-title--color-' ~ content.field_color|render|striptags|trim|clean_class,
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+  <h1{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content }}
+      {{ title }}
     {% endblock %}
-  </div>
+  </h1>
 {% endblock paragraph %}
