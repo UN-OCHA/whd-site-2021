@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: video_grid
-label: 'Video Grid'
+label: 'Grid: 2-column'
 icon_uuid: null
 icon_default: null
-description: 'A two-column grid for multiple video embeds.'
+description: 'A two-column grid for multiple types of content.'
 behavior_plugins: {  }

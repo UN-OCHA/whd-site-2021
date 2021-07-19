@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_videos
+    - paragraphs.paragraphs_type.article_teaser
     - paragraphs.paragraphs_type.video_embed
     - paragraphs.paragraphs_type.video_grid
   module:
@@ -12,7 +13,7 @@ id: paragraph.video_grid.field_videos
 field_name: field_videos
 entity_type: paragraph
 bundle: video_grid
-label: Videos
+label: Content
 description: ''
 required: true
 translatable: false
@@ -24,23 +25,42 @@ settings:
     negate: 0
     target_bundles:
       video_embed: video_embed
+      article_teaser: article_teaser
     target_bundles_drag_drop:
+      article_teaser:
+        enabled: true
+        weight: 13
+      cta_button:
+        weight: 14
+        enabled: false
       cta_heading:
         weight: 8
         enabled: false
       heading:
         weight: 9
         enabled: false
+      hero_section:
+        weight: 17
+        enabled: false
       page_section:
         weight: 10
         enabled: false
+      page_title:
+        weight: 19
+        enabled: false
       text:
         weight: 11
+        enabled: false
+      thr_logo:
+        weight: 21
         enabled: false
       video_embed:
         enabled: true
         weight: 12
       video_grid:
         weight: 7
+        enabled: false
+      whd_logo:
+        weight: 24
         enabled: false
 field_type: entity_reference_revisions
