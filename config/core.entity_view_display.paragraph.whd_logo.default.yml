@@ -1,0 +1,22 @@
+uuid: 84fd36e6-6c9c-413c-8df0-cbbeb6eae2ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.whd_logo.field_whd_logo_color
+    - paragraphs.paragraphs_type.whd_logo
+  module:
+    - options
+id: paragraph.whd_logo.default
+targetEntityType: paragraph
+bundle: whd_logo
+mode: default
+content:
+  field_whd_logo_color:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden: {  }

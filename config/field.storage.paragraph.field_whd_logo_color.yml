@@ -1,0 +1,27 @@
+uuid: f666c3a5-b3b3-4556-9cb4-2926968f5b54
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_whd_logo_color
+field_name: field_whd_logo_color
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: white
+      label: White
+    -
+      value: blue
+      label: Blue
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

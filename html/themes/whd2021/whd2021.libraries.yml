@@ -52,6 +52,11 @@ text:
     theme:
       templates/components/text/paragraph--text.css: {}
 
+thr-logo:
+  css:
+    theme:
+      templates/components/thr-logo/paragraph--thr-logo.css: {}
+
 video-embed:
   css:
     theme:
@@ -61,3 +66,8 @@ video-grid:
   css:
     theme:
       templates/components/video-grid/paragraph--video-grid.css: {}
+
+whd-logo:
+  css:
+    theme:
+      templates/components/whd-logo/paragraph--whd-logo.css: {}

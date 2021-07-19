@@ -1,0 +1,22 @@
+uuid: 385ec7c6-8df2-4c31-a8d5-97c793b103ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.thr_logo.field_thr_logo_with_whd
+    - paragraphs.paragraphs_type.thr_logo
+id: paragraph.thr_logo.default
+targetEntityType: paragraph
+bundle: thr_logo
+mode: default
+content:
+  field_thr_logo_with_whd:
+    weight: 0
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  status: true
