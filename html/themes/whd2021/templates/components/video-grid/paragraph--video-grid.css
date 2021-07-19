@@ -9,6 +9,6 @@
   }
 
   .video-grid > * {
-    flex: 0 1 49%;
+    flex: 1 1 49%;
   }
 }
