@@ -1,0 +1,11 @@
+/**
+ * Paragraph: WHD Logo
+ */
+.whd-logo {
+  text-align: center;
+}
+
+.whd-logo img {
+  /* the image file itself doesn't perfectly center the graphic. fix it. */
+  margin-left: 1.4rem;
+}

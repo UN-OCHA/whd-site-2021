@@ -4,6 +4,7 @@
  * Implements template_preprocess_page().
  */
 function whd2021_preprocess_page(&$variables) {
+  // Current language
   $current_language = \Drupal::languageManager()->getCurrentLanguage()->getId();
   $variables['current_language'] = $current_language;
 }

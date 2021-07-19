@@ -42,6 +42,11 @@ hero-section:
     theme:
       templates/components/hero-section/paragraph--hero-section.css: {}
 
+whd-logo:
+  css:
+    theme:
+      templates/components/whd-logo/paragraph--whd-logo.css: {}
+
 page-section:
   css:
     theme:
