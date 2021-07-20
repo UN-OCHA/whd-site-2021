@@ -1,7 +1,11 @@
 /**
  * Global Styles for WHD 2021
  */
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 /**
  * Browser defaults

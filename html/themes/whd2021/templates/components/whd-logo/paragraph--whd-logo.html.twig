@@ -52,9 +52,9 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <img srcset="/themes/whd2021/img/whd-logo/whd-{{ logoColor }}-en.png,
-                   /themes/whd2021/img/whd-logo/whd-{{ logoColor }}-en@2x.png 2x"
-           src="/themes/whd2021/img/whd-logo/whd-{{ logoColor }}-en.png"
+      <img srcset="/themes/whd2021/img/whd-logo/whd-{{ logoColor }}-{{ paragraph_language }}.png,
+                   /themes/whd2021/img/whd-logo/whd-{{ logoColor }}-{{ paragraph_language }}@2x.png 2x"
+           src="/themes/whd2021/img/whd-logo/whd-{{ logoColor }}-{{ paragraph_language }}.png"
            alt="{{ 'World Humanitarian Day'|trans }}">
     {% endblock %}
   </div>
