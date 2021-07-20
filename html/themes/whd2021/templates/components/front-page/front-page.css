@@ -1,9 +1,7 @@
 /**
  * Front page styles
  */
-.front-page {
-
-}
+.front-page {}
 
 .front-page__logos {
   position: absolute;
@@ -15,6 +13,7 @@
   align-items: flex-start;
   width: 100%;
   height: 15vw;
+  padding: 0 2rem;
 }
 
 .front-page__logo {
@@ -28,11 +27,11 @@
 }
 
 .logo--whd {
-  width: 33%;
+  width: 33.3vw;
   height: 15vw;
 }
 
 .logo--thr {
-  width: 20%;
+  width: 15vw;
   height: 15vw;
 }
