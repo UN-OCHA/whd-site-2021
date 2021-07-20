@@ -1,0 +1,22 @@
+uuid: f2d6f3b8-836b-4736-a18a-8c2bc0da02d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.cta_button
+id: paragraph.cta_button.status
+field_name: status
+entity_type: paragraph
+bundle: cta_button
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
