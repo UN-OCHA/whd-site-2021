@@ -1,0 +1,22 @@
+uuid: 3cff8a17-77a0-444b-888d-73959e809a17
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.cta_heading
+id: paragraph.cta_heading.status
+field_name: status
+entity_type: paragraph
+bundle: cta_heading
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

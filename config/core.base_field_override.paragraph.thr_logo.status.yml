@@ -1,0 +1,22 @@
+uuid: 8afdbf4a-9f84-4d35-8d8b-ac0661a5b8bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.thr_logo
+id: paragraph.thr_logo.status
+field_name: status
+entity_type: paragraph
+bundle: thr_logo
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

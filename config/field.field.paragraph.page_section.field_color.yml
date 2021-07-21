@@ -14,7 +14,7 @@ bundle: page_section
 label: 'Section color'
 description: 'Select the background color for this Section. Selecting "Default" will display Gray.'
 required: true
-translatable: true
+translatable: false
 default_value:
   -
     value: default

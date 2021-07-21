@@ -23,6 +23,39 @@
   display: block;
 }
 
+
+/**
+ * Language switcher
+ */
+.language-switcher-language-url .links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  height: 32px; /* matching hamburger button height */
+}
+
+.language-switcher-language-url .links li {
+  list-style-type: none;
+}
+
+.language-switcher-language-url .links a {
+  padding: .5rem;
+  color: black;
+  font-size: .75em;
+}
+
+.language-switcher-language-url .links a:first-child {
+  padding-inline-start: 0;
+}
+
+.language-switcher-language-url .links a.is-active {
+  font-weight: 700;
+}
+
 /**
  * Main nav: basic behavior is a top-edge, off-canvas hamburger.
  */

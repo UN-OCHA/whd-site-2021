@@ -18,7 +18,7 @@ bundle: hero_section
 mode: default
 content:
   field_content_hero:
-    type: paragraphs
+    type: entity_reference_paragraphs
     weight: 4
     settings:
       title: Paragraph
@@ -26,13 +26,7 @@ content:
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      features:
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
+      default_paragraph_type: _none
     third_party_settings: {  }
     region: content
   field_heading_text:
@@ -57,6 +51,11 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true

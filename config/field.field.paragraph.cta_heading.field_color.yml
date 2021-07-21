@@ -14,7 +14,7 @@ bundle: cta_heading
 label: 'Heading color'
 description: 'Optionally select an override color for this Heading. Default means the container will automatically set the color.'
 required: true
-translatable: true
+translatable: false
 default_value:
   -
     value: default

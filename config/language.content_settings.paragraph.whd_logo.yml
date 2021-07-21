@@ -1,0 +1,18 @@
+uuid: e96b0343-af8b-4a73-ae35-a59cb4754efa
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.whd_logo
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.whd_logo
+target_entity_type_id: paragraph
+target_bundle: whd_logo
+default_langcode: site_default
+language_alterable: false
