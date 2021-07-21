@@ -1,0 +1,23 @@
+uuid: cc8c8c69-0982-4a9e-acc9-9963c026b7c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.share.field_heading_text
+    - paragraphs.paragraphs_type.share
+id: paragraph.share.default
+targetEntityType: paragraph
+bundle: share
+mode: default
+content:
+  field_heading_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
