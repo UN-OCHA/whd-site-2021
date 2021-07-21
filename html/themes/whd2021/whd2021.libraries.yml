@@ -62,6 +62,17 @@ page-title:
     theme:
       templates/components/page-title/paragraph--page-title.css: {}
 
+share:
+  css:
+    theme:
+      templates/components/share/paragraph--share.css: {}
+  js:
+    templates/components/share/paragraph--share.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+
 text:
   css:
     theme:
