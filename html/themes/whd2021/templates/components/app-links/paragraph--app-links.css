@@ -1,0 +1,56 @@
+/**
+ * Paragraph: App Links
+ */
+.app-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.app-link {
+   /* Google PNG is 562px wide so we size based on the raster. Apple is SVG. */
+  max-width: calc(562px / 3);
+}
+
+.app-link--apple img {
+  width: calc(562px / 3 * .886120996);
+  height: auto;
+}
+
+.app-link--google img {
+  width: calc(562px / 3 * 1);
+  height: auto;
+}
+
+/* Apple made the French SVG "think different" than the others, requiring the
+dimensions to be customized. */
+[lang="fr"] .app-link--apple img {
+  width: calc(562px / 3 * .934174673);
+}
+
+/**
+ * Just for future reference, some numbers that I didn't want to convert into
+ * CSS Custom Props since IE can't handle them anyway. The relative-ratio is
+ * what you actually need to make them all display at the same height, by
+ * varying the display widths.
+ *
+ * Google (widest, and it's Raster so we use it as the base)
+ * w: 646;
+ * h: 250;
+ * ratio: 3.385542169
+ * relative-ratio: 1;
+ *
+ * Apple
+ * w: 120
+ * w: 40
+ * ratio: 3
+ * relative-ratio: .886120996;
+ *
+ * Apple (FR)
+ * w: 126.50751;
+ * h: 40;
+ * ratio: 3.16268775
+ * relative-ratio: .934174673;
+ **/
