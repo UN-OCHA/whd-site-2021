@@ -17,6 +17,11 @@ global-styling:
 #
 # Components
 #
+app-links:
+  css:
+    theme:
+      templates/components/app-links/paragraph--app-links.css: {}
+
 article-teaser:
   css:
     theme:

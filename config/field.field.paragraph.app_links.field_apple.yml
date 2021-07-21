@@ -1,0 +1,23 @@
+uuid: 319dc1c5-3f67-405d-b6a1-09d008edc3d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_apple
+    - paragraphs.paragraphs_type.app_links
+  module:
+    - link
+id: paragraph.app_links.field_apple
+field_name: field_apple
+entity_type: paragraph
+bundle: app_links
+label: Apple
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
