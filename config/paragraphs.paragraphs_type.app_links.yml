@@ -1,0 +1,10 @@
+uuid: 8d3a2e75-042e-48af-91b6-a7228801b2b6
+langcode: en
+status: true
+dependencies: {  }
+id: app_links
+label: 'App Links'
+icon_uuid: null
+icon_default: null
+description: 'Insert links for one app. You can display either Apple, Google, or both app stores. Insert this component multiple times for multiple apps.'
+behavior_plugins: {  }
