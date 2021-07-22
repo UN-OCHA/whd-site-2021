@@ -55,7 +55,7 @@
       <h3 class="article-teaser__heading">{{ content.field_heading_text|render|striptags|trim }}</h3>
       <p class="article-teaser__caption">
         {{ content.field_video_caption|render|striptags|trim }}
-        <a href="{{ content.field_url|render|striptags|trim }}">[{{ 'read more'|trans }}]</a>
+        <a href="{{ content.field_url|render|striptags|trim }}">[{{ 'read more'|t }}]</a>
       </p>
       <a class="article-teaser__photo" href="{{ content.field_url|render|striptags|trim }}">
         {{ content.field_photo }}
