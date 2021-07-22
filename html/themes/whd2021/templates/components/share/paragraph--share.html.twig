@@ -49,18 +49,19 @@
   ]
 %}
 {% set message = content.field_heading_text|render|striptags|trim %}
+{% set url = url('<front>')|render %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes).setAttribute('aria-hidden', 'true').setAttribute('data-msg', message) }}>
+  <div{{ attributes.addClass(classes).setAttribute('aria-hidden', 'true') }}>
     {% block content %}
       <ul class="share-tabs">
         <li class="share-tabs__tab tab--fb">
-          <a class="share-tabs__link" href="https://example.com/share-FB" rel="noreferrer" target="_blank">
+          <a class="share-tabs__link" href="https://www.facebook.com/sharer/sharer.php?u={{ url|escape('url') }}" rel="noreferrer" target="_blank">
             <span class="share-tabs__text">{{ 'Share'|t }}</span>
             <img src="/themes/whd2021/img/share/logo-fb.png" alt="Facebook">
           </a>
         </li>
         <li class="share-tabs__tab tab--tw">
-          <a class="share-tabs__link" href="https://example.com/share-TW" rel="noreferrer" target="_blank">
+          <a class="share-tabs__link" href="https://twitter.com/intent/tweet?text={{ message|escape('url')|replace({'%26%23039%3B': '\''}) }}%0A%0A{{ url|escape('url') }}" rel="noreferrer" target="_blank">
             <span class="share-tabs__text">{{ 'Share'|t }}</span>
             <img src="/themes/whd2021/img/share/logo-tw.png" alt="Twitter">
           </a>
