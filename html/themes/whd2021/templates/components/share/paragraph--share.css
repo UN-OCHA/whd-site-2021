@@ -2,3 +2,52 @@
  * Paragraph: Social Share
  */
 .share {}
+
+/**
+ * Share tabs, with one tab per social network that we support.
+ */
+.share-tabs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.share-tabs__tab {
+  display: block;
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+.share-tabs__link {
+  /* Button layout */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+
+  /* Typography / visual */
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.tab--fb {
+  background-color: #4267b2;
+}
+.tab--fb img {
+  width: 78px;
+  height: 78px;
+}
+
+.tab--tw {
+  background-color: #1da1f2;
+}
+.tab--tw img {
+  width: 78px;
+  height: 63px;
+}

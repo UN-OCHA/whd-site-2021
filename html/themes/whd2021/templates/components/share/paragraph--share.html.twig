@@ -53,8 +53,18 @@
   <div{{ attributes.addClass(classes).setAttribute('aria-hidden', 'true').setAttribute('data-msg', message) }}>
     {% block content %}
       <ul class="share-tabs">
-        <li><a href="###">{{ 'Share'|t }}</a></li>
-        <li><a href="###">{{ 'Share'|t }}</a></li>
+        <li class="share-tabs__tab tab--fb">
+          <a class="share-tabs__link" href="https://example.com/share-FB" rel="noreferrer" target="_blank">
+            <span class="share-tabs__text">{{ 'Share'|t }}</span>
+            <img src="/themes/whd2021/img/share/logo-fb.png" alt="Facebook">
+          </a>
+        </li>
+        <li class="share-tabs__tab tab--tw">
+          <a class="share-tabs__link" href="https://example.com/share-TW" rel="noreferrer" target="_blank">
+            <span class="share-tabs__text">{{ 'Share'|t }}</span>
+            <img src="/themes/whd2021/img/share/logo-tw.png" alt="Twitter">
+          </a>
+        </li>
       </ul>
       <div class="share-img">
         <img src="/themes/whd2021/img/share/share-{{ paragraph_language }}.jpg" alt="placeholder alt">
