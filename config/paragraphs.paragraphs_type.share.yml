@@ -1,0 +1,10 @@
+uuid: b2703107-34c0-49c4-a422-dccc0c6dfb64
+langcode: en
+status: true
+dependencies: {  }
+id: share
+label: 'Social Share'
+icon_uuid: null
+icon_default: null
+description: 'The social sharing widget. Can share to FB or Twitter.'
+behavior_plugins: {  }

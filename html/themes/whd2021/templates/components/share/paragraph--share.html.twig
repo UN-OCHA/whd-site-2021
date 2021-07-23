@@ -38,22 +38,38 @@
  * @ingroup themeable
  */
 #}
-{{ attach_library('whd2021/thr-logo') }}
+{{ attach_library('whd2021/share') }}
 {%
   set classes = [
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
-    'thr-logo',
+    'share',
   ]
 %}
-{% set withWhd = content.field_thr_logo_with_whd|render|striptags|trim|clean_class %}
+{% set message = content.field_heading_text|render|striptags|trim %}
+{% set url = url('<front>')|render %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+  <div{{ attributes.addClass(classes).setAttribute('aria-hidden', 'true') }}>
     {% block content %}
-      <img src="/themes/whd2021/img/thr-logo/{{ withWhd }}thr-{{ paragraph_language }}.png"
-           alt="{{ 'The Human Race'|t }}">
+      <ul class="share-tabs">
+        <li class="share-tabs__tab tab--fb">
+          <a class="share-tabs__link" href="https://www.facebook.com/sharer/sharer.php?u={{ url|escape('url') }}" rel="noreferrer" target="_blank">
+            <span class="share-tabs__text">{{ 'Share'|t }}</span>
+            <img src="/themes/whd2021/img/share/logo-fb.png" alt="Facebook">
+          </a>
+        </li>
+        <li class="share-tabs__tab tab--tw">
+          <a class="share-tabs__link" href="https://twitter.com/intent/tweet?text={{ message|escape('url')|replace({'%26%23039%3B': '\''}) }}%0A%0A{{ url|escape('url') }}" rel="noreferrer" target="_blank">
+            <span class="share-tabs__text">{{ 'Share'|t }}</span>
+            <img src="/themes/whd2021/img/share/logo-tw.png" alt="Twitter">
+          </a>
+        </li>
+      </ul>
+      <div class="share-img">
+        <img src="/themes/whd2021/img/share/share-{{ 'en' }}{# {{ paragraph_language }} #}.jpg" alt="placeholder alt">
+      </div>
     {% endblock %}
   </div>
 {% endblock paragraph %}
