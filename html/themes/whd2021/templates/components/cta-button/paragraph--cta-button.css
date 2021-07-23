@@ -54,3 +54,7 @@
 [dir="rtl"] .cta-button__text + .cta-button__image {
   margin-right: 0.5rem;
 }
+
+.cta-button__container:focus {
+  outline: 4px solid black;
+}

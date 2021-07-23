@@ -1,0 +1,23 @@
+/**
+ * Paragraph: MailChimp Signup form
+ */
+.mailchimp-signup {
+  padding: 2rem;
+}
+
+.mailchimp-signup input {
+  width: 100%;
+  max-width: 36ch;
+
+  border: 2px solid black;
+  padding-inline: .5em;
+  background-color: rgba(255,255,255,0.8);
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+}
+
+.mailchimp-signup input:focus {
+  background-color: white;
+  outline: 2px solid black;
+}

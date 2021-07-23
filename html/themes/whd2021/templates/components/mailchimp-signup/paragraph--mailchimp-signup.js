@@ -1,5 +1,5 @@
 (function iife($) {
-  Drupal.behaviors.whdShare = {
+  Drupal.behaviors.whdMailchimp = {
     attach: function (context, settings) {
       // Drupal Behaviors boilerplate
     },

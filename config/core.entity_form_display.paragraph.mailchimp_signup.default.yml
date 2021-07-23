@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.mailchimp_signup.field_color
+    - field.field.paragraph.mailchimp_signup.field_heading_text
     - field.field.paragraph.mailchimp_signup.field_mailchimp_list_id
     - paragraphs.paragraphs_type.mailchimp_signup
 id: paragraph.mailchimp_signup.default
@@ -10,6 +12,20 @@ targetEntityType: paragraph
 bundle: mailchimp_signup
 mode: default
 content:
+  field_color:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_heading_text:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_mailchimp_list_id:
     weight: 0
     settings:
@@ -17,6 +33,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
     region: content
 hidden:
   created: true
