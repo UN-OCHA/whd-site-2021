@@ -53,7 +53,7 @@
 {% set buttonText = content.field_heading_text|render|striptags|trim %}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
-    <a href="{{buttonUrl}}">
+    <a class="cta-button__container" href="{{buttonUrl}}">
       {% block content %}
         <span class="cta-button__text">{{ buttonText }}</span>
         {% if content.field_button_image is not empty %}

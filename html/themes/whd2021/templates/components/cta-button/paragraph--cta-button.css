@@ -3,7 +3,7 @@
  */
 .cta-button {}
 
-.cta-button a {
+.cta-button__container {
   /* Layout for inner contents. Some buttons can have images embedded */
   display: inline-flex;
   flex-flow: row nowrap;
@@ -11,6 +11,7 @@
   align-items: center;
 
   /* Typography + visual styles */
+  border: 0;
   padding: .5em 1.5em;
   font-family: 'Oswald', sans-serif;
   font-size: 1.2rem;
@@ -21,23 +22,23 @@
   color: white;
 }
 
-.cta-button--color-gray a {
+.cta-button--color-gray .cta-button__container {
   background: #3c3c3c;
   color: white;
 }
 
-.cta-button--color-blue a {
+.cta-button--color-blue .cta-button__container {
   background: #00b9f1;
   color: white;
 }
 
-.cta-button--color-yellow a {
+.cta-button--color-yellow .cta-button__container {
   background: #ffdc4b;
   color: #3c3c3c;
 }
 
 @media screen and (min-width: 960px) {
-  .cta-button a {
+  .cta-button__container {
     font-size: 1.5rem;
   }
 }
