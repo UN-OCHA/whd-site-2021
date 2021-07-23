@@ -16,6 +16,7 @@
   font-family: 'Oswald', sans-serif;
   font-size: 1.2rem;
   text-decoration: none;
+  cursor: pointer;
 
   /* Colors can be overridden by a modifier class below */
   background: #3c3c3c;
