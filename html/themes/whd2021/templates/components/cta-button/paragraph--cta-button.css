@@ -22,6 +22,11 @@
   color: white;
 }
 
+/* Spcial selector to override MailChimp Embec (MCE) */
+input.cta-button__container {
+  border-radius: 0;
+}
+
 .cta-button--color-gray .cta-button__container {
   background: #3c3c3c;
   color: white;
