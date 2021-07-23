@@ -1,0 +1,13 @@
+diff --git a/src/Plugin/Network/HidAuth.php b/src/Plugin/Network/HidAuth.php
+index e9e727d..c611ab7 100644
+--- a/src/Plugin/Network/HidAuth.php
++++ b/src/Plugin/Network/HidAuth.php
+@@ -148,7 +148,7 @@ protected function initSdk() {
+       ];
+
+       // Proxy configuration data for outward proxy.
+-      $proxyUrl = $this->siteSettings->get('http_client_config')['proxy']['http'];
++      $proxyUrl = $this->siteSettings->get('http_client_config')['proxy']['http'] ?? FALSE;
+       if ($proxyUrl) {
+         $league_settings = [
+           'proxy' => $proxyUrl,
