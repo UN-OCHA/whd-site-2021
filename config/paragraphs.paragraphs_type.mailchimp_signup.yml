@@ -1,0 +1,10 @@
+uuid: 258b764b-c0ee-4dbd-9b85-57496dd02b96
+langcode: en
+status: true
+dependencies: {  }
+id: mailchimp_signup
+label: 'MailChimp Signup'
+icon_uuid: null
+icon_default: null
+description: 'Place and configure the MailChimp signup form.'
+behavior_plugins: {  }

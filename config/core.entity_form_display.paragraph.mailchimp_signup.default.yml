@@ -1,0 +1,23 @@
+uuid: 95b93273-93d4-4a4a-a949-45d5afea8bf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mailchimp_signup.field_mailchimp_list_id
+    - paragraphs.paragraphs_type.mailchimp_signup
+id: paragraph.mailchimp_signup.default
+targetEntityType: paragraph
+bundle: mailchimp_signup
+mode: default
+content:
+  field_mailchimp_list_id:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
