@@ -2,7 +2,7 @@
  * Paragraph: Page Section
  */
 .page-section {
-  padding: 2em;
+  padding: calc(2em + 10px) 2em;
   background: #3c3c3c;
   color: #eee;
   text-align: center;
