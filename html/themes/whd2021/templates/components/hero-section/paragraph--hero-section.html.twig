@@ -47,13 +47,13 @@
     not paragraph.isPublished() ? 'paragraph--unpublished',
     'hero-section',
     'hero-section--justify-content--' ~ content.field_justify_content|render|striptags|trim|clean_class,
-    'flow',
+    '[ flow ]',
   ]
 %}
 {% set bgUrl = content.field_photo.0.value %}
 
 {% block paragraph %}
-  <div{{ attributes.addClass(classes).setAttribute('style', 'background-image: url(' ~ content.field_photo|render|striptags|trim ~ ');') }}>
+  <div{{ attributes.addClass(classes).setAttribute('id', 'section--' ~ paragraph.id()).setAttribute('style', 'background-image: url(' ~ content.field_photo|render|striptags|trim ~ ');') }}>
     {% block content %}
       {{ content.field_heading_text }}
 
