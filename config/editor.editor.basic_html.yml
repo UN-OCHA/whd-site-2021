@@ -35,7 +35,7 @@ settings:
             - Styles
   plugins:
     stylescombo:
-      styles: "span.text--white|White text\r\nspan.text--gray|Gray text\r\nspan.text--blue|Blue text\r\nspan.text--yellow|Yellow text"
+      styles: "span.text--white|White text\r\nspan.text--gray|Gray text\r\nspan.text--blue|Blue text\r\nspan.text--yellow|Yellow text\r\nspan.text--smaller|Smaller text"
     language:
       language_list: un
 image_upload:
