@@ -52,6 +52,18 @@ hero-section:
     theme:
       templates/components/hero-section/paragraph--hero-section.css: {}
 
+mailchimp-signup:
+  css:
+    theme:
+      templates/components/mailchimp-signup/paragraph--mailchimp-signup.css: {}
+  js:
+    templates/components/mailchimp-signup/paragraph--mailchimp-signup.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - whd2021/cta-button
+
 page-section:
   css:
     theme:
@@ -66,12 +78,6 @@ share:
   css:
     theme:
       templates/components/share/paragraph--share.css: {}
-  js:
-    templates/components/share/paragraph--share.js: {}
-  dependencies:
-    - core/drupal
-    - core/jquery
-    - core/jquery.once
 
 text:
   css:

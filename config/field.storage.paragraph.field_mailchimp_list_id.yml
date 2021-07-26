@@ -1,0 +1,21 @@
+uuid: 7fe787cc-bcab-49e2-ae2f-e4103e5d8b7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_mailchimp_list_id
+field_name: field_mailchimp_list_id
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

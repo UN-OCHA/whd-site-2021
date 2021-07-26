@@ -1,0 +1,23 @@
+uuid: 142e20eb-6b12-45ea-bb67-ddd4292b0559
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color
+    - paragraphs.paragraphs_type.mailchimp_signup
+  module:
+    - options
+id: paragraph.mailchimp_signup.field_color
+field_name: field_color
+entity_type: paragraph
+bundle: mailchimp_signup
+label: 'Button color'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

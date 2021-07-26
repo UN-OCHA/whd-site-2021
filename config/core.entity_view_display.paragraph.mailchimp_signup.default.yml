@@ -1,0 +1,40 @@
+uuid: 7f3d4e0e-0c6b-4353-8404-f49edf2b29fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.mailchimp_signup.field_color
+    - field.field.paragraph.mailchimp_signup.field_heading_text
+    - field.field.paragraph.mailchimp_signup.field_mailchimp_list_id
+    - paragraphs.paragraphs_type.mailchimp_signup
+  module:
+    - options
+id: paragraph.mailchimp_signup.default
+targetEntityType: paragraph
+bundle: mailchimp_signup
+mode: default
+content:
+  field_color:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_heading_text:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mailchimp_list_id:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
