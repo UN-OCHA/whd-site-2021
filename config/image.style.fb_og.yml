@@ -1,0 +1,15 @@
+uuid: ce53749e-e142-4ed2-892d-2c05f7a836e2
+langcode: en
+status: true
+dependencies: {  }
+name: fb_og
+label: 'FB OG'
+effects:
+  c0aa10d9-f74c-4387-b720-22513d1ae32f:
+    uuid: c0aa10d9-f74c-4387-b720-22513d1ae32f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 630
+      anchor: center-center
