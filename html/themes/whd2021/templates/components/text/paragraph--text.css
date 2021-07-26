@@ -27,3 +27,6 @@
 .text--yellow {
   color: #ffdc4b;
 }
+.text--smaller {
+  font-size: calc(1em - 3px);
+}
