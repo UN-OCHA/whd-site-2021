@@ -4,16 +4,22 @@
 .front-page {}
 
 .front-page__logos {
-  position: absolute;
-  top: 6rem;
-  z-index: 10;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  height: 15vw;
+  height: 18vw;
   padding: 0 2rem;
+}
+
+@media screen and (min-width: 34em) {
+  .front-page__logos {
+    position: absolute;
+    top: 6rem;
+    z-index: 10;
+    height: 15vw;
+  }
 }
 
 .front-page__logo {
