@@ -1,0 +1,29 @@
+uuid: 66db75c2-02e6-4eb9-a2d7-8eda666ef52e
+langcode: en
+status: false
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  shortlink: '[site:url]'
+  canonical_url: '[site:url]'
+  'hreflang_per_language:hreflang_ar': '[node:url:absolute]/ar'
+  'hreflang_per_language:hreflang_zh-hans': '[node:url:absolute]/zh-hans'
+  'hreflang_per_language:hreflang_en': '[node:url:absolute]'
+  'hreflang_per_language:hreflang_fr': '[node:url:absolute]/fr'
+  'hreflang_per_language:hreflang_ru': '[node:url:absolute]/ru'
+  'hreflang_per_language:hreflang_es': '[node:url:absolute]/es'
+  hreflang_xdefault: '[node:url:absolute]'
+  og_image_width: '1200'
+  og_image: '[node:field_social_image:entity:field_media_image:fb_og:url]'
+  og_image_height: '630'
+  og_image_alt: '[node:field_social_image:entity:field_media_image:entity:alt]'
+  twitter_cards_image: '[node:field_social_image:entity:field_media_image:twitter_image:url]'
+  twitter_cards_image_width: '600'
+  twitter_cards_site: '@UNOCHA'
+  twitter_cards_image_alt: '[node:field_social_image:entity:field_media_image:entity:alt]'
+  twitter_cards_type: summary_large_image
+  twitter_cards_image_height: '1200'
+  twitter_cards_donottrack: 'on'
