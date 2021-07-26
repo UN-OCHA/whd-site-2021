@@ -1,7 +1,16 @@
 /**
  * Paragraph: Social Share
  */
-.share {}
+.share {
+  /* nullify the normal effect of `.flow` because this widget appears in the
+  physical space of another widget, and leaving its margin is the smoothest way
+  to transition between the two */
+  margin-top: 0;
+
+  /* set max-height to 0 so we can reveal it when desired */
+  max-height: 0;
+  overflow: hidden;
+}
 
 /**
  * Share tabs, with one tab per social network that we support.
@@ -50,4 +59,17 @@
 .tab--tw img {
   width: 78px;
   height: 63px;
+}
+
+/**
+ * Revealing the Share widget after MC conversion.
+ *
+ * The JS that corresponds to this class is in the `mailchimp-signup` component.
+ */
+.share--is-visible {
+  max-height: 600px;
+
+  transition: 0.5s ease-in-out;
+  transition-property: max-height;
+  transition-delay: 0.5s;
 }

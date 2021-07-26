@@ -3,6 +3,10 @@
  */
 .mailchimp-signup {
   padding: 2rem;
+  /* after successful submission, the form will collapse to leave space for the
+  sharing widget. We're using max-height to collapse, so we need a default set
+  here to enable a smooth transition */
+  max-height: 600px;
 }
 
 .mailchimp-signup input {
@@ -35,6 +39,20 @@
 .mailchimp-signup select:focus {
   outline: 1px solid black;
 }
+
+.mailchimp-signup--is-hidden {
+  overflow: hidden;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  /* Transition: fade out first, then collapse completely */
+  transition: .5s ease-in-out;
+  transition-property: opacity, padding, max-height;
+  transition-delay: 0s, 0.5s, 0.5s;
+}
+
+
 
 /**
  * MailChimp Embed CSS
@@ -98,4 +116,7 @@
  */
 #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
   max-width: 36ch;
+}
+#mc_embed_signup div.response {
+  width: 100%;
 }
