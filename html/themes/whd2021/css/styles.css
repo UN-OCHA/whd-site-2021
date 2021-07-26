@@ -49,6 +49,7 @@ body {
  * Utility class for vertical rhythm within a container.
  */
 .flow > * + * {
+  margin-top: 1em;
   margin-top: var(--flow-space, 1em);
 }
 
