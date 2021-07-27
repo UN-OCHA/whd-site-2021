@@ -63,6 +63,11 @@
  */
 .main-nav {}
 
+.main-nav.contextual-region {
+  /* WHD-51: override core's style for admins, so they can still use the nav */
+  position: static;
+}
+
 .main-nav__toggle {
   position: relative;
   z-index: 10;
