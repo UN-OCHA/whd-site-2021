@@ -164,6 +164,9 @@
     "drupal/tome_sync": {
         "version": "1.4.0"
     },
+    "drupal/translatable_menu_link_uri": {
+        "version": "2.0.0"
+    },
     "drupal/viewsreference": {
         "version": "1.7.0"
     },
