@@ -56,8 +56,14 @@ input.cta-button__container {
 .cta-button__text + .cta-button__image {
   margin-left: 0.5rem;
 }
-
 [dir="rtl"] .cta-button__text + .cta-button__image {
+  margin-right: 0.5rem;
+}
+
+.cta-button__text + .cta-button__image + .cta-button__text {
+  margin-left: 0.5rem;
+}
+[dir="rtl"] .cta-button__text + .cta-button__image + .cta-button__text {
   margin-right: 0.5rem;
 }
 
