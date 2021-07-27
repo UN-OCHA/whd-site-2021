@@ -10,6 +10,7 @@ permissions:
   - 'access administration pages'
   - 'access content overview'
   - 'access media overview'
+  - 'administer menu'
   - 'administer nodes'
   - 'bypass node access'
   - 'create content translations'
