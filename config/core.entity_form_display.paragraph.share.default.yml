@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.share.field_heading_text
+    - field.field.paragraph.share.field_media
     - paragraphs.paragraphs_type.share
 id: paragraph.share.default
 targetEntityType: paragraph
@@ -18,6 +19,21 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_media:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  translation:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true

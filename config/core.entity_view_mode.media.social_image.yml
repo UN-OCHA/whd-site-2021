@@ -1,0 +1,10 @@
+uuid: a32d6076-a528-41d1-bb6b-edb23a9d10ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.social_image
+label: 'Social Image'
+targetEntityType: media
+cache: true
