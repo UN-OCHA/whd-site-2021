@@ -48,7 +48,7 @@ jobs:
             --build-arg GITHUB_REF=${GITHUB_REF} \
          . --file docker/Dockerfile --tag public.ecr.aws/unocha/whd2021-site:${DOCKER_TAG} || exit 1
         docker push public.ecr.aws/unocha/whd2021-site:${DOCKER_TAG} || exit 1
-        curl -H "Token: ${JENKINS_TOKEN}" -X POST "https://jenkins.aws.ahconu.org/generic-webhook-trigger/invoke?DOCKER_IMAGE=whd2021-site&DOCKER_TAG=${DCKER_TAG}"
+        curl -H "Token: ${JENKINS_TOKEN}" -X POST "https://jenkins.aws.ahconu.org/generic-webhook-trigger/invoke?DOCKER_IMAGE=whd2021-site&DOCKER_TAG=${DOCKER_TAG}"
       continue-on-error: true
 
     - name: Flowdock Failure
