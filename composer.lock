@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93efbfa7de6748babc719a7226b66788",
+    "content-hash": "709d3252809b3898b19789b783b7df97",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3120,33 +3120,34 @@
         },
         {
             "name": "drupal/social_api",
-            "version": "2.0.0-rc4",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/social_api.git",
-                "reference": "8.x-2.0-rc4"
+                "reference": "3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social_api-8.x-2.0-rc4.zip",
-                "reference": "8.x-2.0-rc4",
-                "shasum": "0ae587d6677e21c573fbdf8e92376bda2f5b1480"
+                "url": "https://ftp.drupal.org/files/projects/social_api-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "b3e5f11413f50fe067afa22fce197ce1402300cc"
             },
             "require": {
-                "drupal/core": "^8.8.0 || ^9.0",
+                "drupal/core": "^8.8 || ^9.0",
                 "league/oauth2-client": "^2.0"
             },
             "require-dev": {
-                "drupal/coder": "^8.3"
+                "drupal/coder": "^8.3",
+                "drupal/social_auth": "^3.0@dev"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0-rc4",
-                    "datestamp": "1608506048",
+                    "version": "3.0.0",
+                    "datestamp": "1609797837",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -3195,34 +3196,33 @@
         },
         {
             "name": "drupal/social_auth",
-            "version": "3.0.0-rc2",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/social_auth.git",
-                "reference": "3.0.0-rc2"
+                "reference": "3.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social_auth-3.0.0-rc2.zip",
-                "reference": "3.0.0-rc2",
-                "shasum": "b5145b9026ebd789996398fff9e8d3dc9c7cce38"
+                "url": "https://ftp.drupal.org/files/projects/social_auth-3.0.1.zip",
+                "reference": "3.0.1",
+                "shasum": "574884c8faf1ccff9aa24dbe8de1fb1203e26a8e"
             },
             "require": {
-                "drupal/core": "^8.8.0 || ^9.0",
-                "drupal/social_api": "*"
+                "drupal/core": "^8.8 || ^9.0",
+                "drupal/social_api": "^3"
             },
             "require-dev": {
-                "drupal/coder": "^8.3",
-                "drupal/social_api": "^3.0@dev"
+                "drupal/coder": "^8.3"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-rc2",
-                    "datestamp": "1608419027",
+                    "version": "3.0.1",
+                    "datestamp": "1609802467",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
