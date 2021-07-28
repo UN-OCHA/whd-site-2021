@@ -33,4 +33,5 @@
 .article-teaser__caption a {
   color: inherit;
   font-weight: 700;
+  white-space: nowrap;
 }
