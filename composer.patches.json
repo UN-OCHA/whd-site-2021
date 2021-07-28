@@ -1,7 +1,4 @@
 {
   "patches": {
-    "drupal/social_auth_hid": {
-      "Check array": "./patches/hid.patch"
-    }
   }
 }

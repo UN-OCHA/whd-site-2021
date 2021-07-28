@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05c117b0a8378d12c0e9e93776f29448",
+    "content-hash": "93efbfa7de6748babc719a7226b66788",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3195,30 +3195,31 @@
         },
         {
             "name": "drupal/social_auth",
-            "version": "2.0.0-rc4",
+            "version": "3.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/social_auth.git",
-                "reference": "8.x-2.0-rc4"
+                "reference": "3.0.0-rc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social_auth-8.x-2.0-rc4.zip",
-                "reference": "8.x-2.0-rc4",
-                "shasum": "54d4804177220f649ccf08490dbf87e80736c378"
+                "url": "https://ftp.drupal.org/files/projects/social_auth-3.0.0-rc2.zip",
+                "reference": "3.0.0-rc2",
+                "shasum": "b5145b9026ebd789996398fff9e8d3dc9c7cce38"
             },
             "require": {
                 "drupal/core": "^8.8.0 || ^9.0",
-                "drupal/social_api": "^2.0@dev"
+                "drupal/social_api": "*"
             },
             "require-dev": {
-                "drupal/coder": "^8.3"
+                "drupal/coder": "^8.3",
+                "drupal/social_api": "^3.0@dev"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0-rc4",
-                    "datestamp": "1608505198",
+                    "version": "3.0.0-rc2",
+                    "datestamp": "1608419027",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -3266,31 +3267,28 @@
         },
         {
             "name": "drupal/social_auth_hid",
-            "version": "2.5.0",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/social_auth_hid.git",
-                "reference": "8.x-2.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social_auth_hid-8.x-2.5.zip",
-                "reference": "8.x-2.5",
-                "shasum": "4737fda9de1dbb59291e8e0fb6f948ef4b8643be"
+                "reference": "eae40e6a153a3557f7fcce095b121ed8dcdb87ae"
             },
             "require": {
-                "drupal/core": "~8.0",
-                "drupal/social_auth": "^2.0",
+                "drupal/core": "^8.8 || ^9",
+                "drupal/social_auth": "^3.0",
                 "un-ocha/oauth2-hid": "^1.0.2"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
                 "drupal": {
-                    "version": "8.x-2.5",
-                    "datestamp": "1597223050",
+                    "version": "8.x-2.5+5-dev",
+                    "datestamp": "1627476320",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -10100,7 +10098,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/social_auth_hid": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
