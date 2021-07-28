@@ -61,6 +61,10 @@
   height: 63px;
 }
 
+.share-img img {
+  height: auto;
+}
+
 /**
  * Revealing the Share widget after MC conversion.
  *
