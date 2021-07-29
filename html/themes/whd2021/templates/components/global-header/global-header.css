@@ -10,9 +10,15 @@
   z-index: 20;
 
   /* visual */
-  padding: 1rem;
+  padding: 1rem .5rem;
   background: white;
   color: black;
+}
+
+@media screen and (min-width: 30em) {
+  .global-header {
+    padding: 1rem;
+  }
 }
 
 .global-header #block-whd2021-account-menu li {
@@ -49,8 +55,10 @@
   font-size: .75em;
 }
 
-.language-switcher-language-url .links li:last-child a {
-  padding-inline-end: 2rem;
+@media screen and (min-width: 30em) {
+  .language-switcher-language-url .links li:last-child a {
+    padding-inline-end: 2rem;
+  }
 }
 
 .language-switcher-language-url .links a.is-active {
