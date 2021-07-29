@@ -10,7 +10,7 @@
   align-items: flex-start;
   width: 100%;
   height: 18vw;
-  padding: 0 2rem;
+  padding: 0 .5rem;
 }
 
 @media screen and (min-width: 34em) {
@@ -19,6 +19,7 @@
     top: 6rem;
     z-index: 10;
     height: 15vw;
+    padding: 0 2rem;
   }
 }
 
