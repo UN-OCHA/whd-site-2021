@@ -53,7 +53,7 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes).setAttribute('id', 'section--' ~ paragraph.id()) }}>
     {% block content %}
-      {{ content|without('field_color') }}
+      {{ content|without('field_color', 'field_display_flourishes') }}
     {% endblock %}
   </div>
 {% endblock paragraph %}
