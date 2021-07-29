@@ -54,12 +54,12 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       {% if apple %}
-        <a class="app-link app-link--apple" href="{{ apple }}">
+        <a class="app-link app-link--apple" href="{{ apple }}" target="_blank" rel="noreferrer">
           <img src="/themes/whd2021/img/apple-store/app-store-{{ paragraph_language }}.svg" alt="{{ 'Download on the App Store'|t }}">
         </a>
       {% endif %}
       {% if google %}
-        <a class="app-link app-link--google" href="{{ google }}">
+        <a class="app-link app-link--google" href="{{ google }}" target="_blank" rel="noreferrer">
           <img src="/themes/whd2021/img/google-play/google-play-{{ paragraph_language }}.png" alt="{{ 'Get it on Google Play'|t }}">
         </a>
       {% endif %}
