@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.hero_section.field_heading_text
     - field.field.paragraph.hero_section.field_justify_content
     - field.field.paragraph.hero_section.field_photo
+    - field.field.paragraph.hero_section.field_photo_caption
     - paragraphs.paragraphs_type.hero_section
   module:
     - entity_reference_revisions
@@ -27,7 +28,7 @@ content:
     third_party_settings: {  }
     region: content
   field_heading_text:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
@@ -42,11 +43,19 @@ content:
     type: list_key
     region: content
   field_photo:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       image_style: ''
     third_party_settings: {  }
     type: image_url
     region: content
+  field_photo_caption:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden: {  }

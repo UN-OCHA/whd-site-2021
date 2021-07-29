@@ -1,0 +1,19 @@
+uuid: 360666bb-6add-4fb0-bf11-db48071e8375
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_photo_caption
+    - paragraphs.paragraphs_type.hero_section
+id: paragraph.hero_section.field_photo_caption
+field_name: field_photo_caption
+entity_type: paragraph
+bundle: hero_section
+label: 'Photo caption'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
