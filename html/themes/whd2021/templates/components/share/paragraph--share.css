@@ -77,3 +77,14 @@
   transition-property: max-height;
   transition-delay: 0.5s;
 }
+
+/**
+ * Reduced motion
+ *
+ * If the user prefers reduced motion, we remove the transition entirely.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .share--is-visible {
+    transition: none;
+  }
+}
