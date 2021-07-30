@@ -5,19 +5,20 @@
       document.documentElement.classList.remove('no-js');
 
       // Find our toggle button.
-      var mainNav = document.querySelector('.main-nav');
-      var mainNavToggle = document.querySelector('.main-nav button[aria-expanded]');
-      var mainNavContents = document.querySelector('.main-nav__contents');
+      var $mainNav = $('.main-nav');
+      var $mainNavToggle = $('.main-nav button[aria-expanded]');
+      var $mainNavContents = $('.main-nav__contents');
+      var $mainNavLinks = $('.main-nav__contents a');
 
       // Assign event listener to allow toggling.
-      mainNavToggle.addEventListener('click', (ev) => {
+      $mainNavToggle.on('click', function (ev) {
         // Manage state of our toggle button.
-        var pressed = ev.target.getAttribute('aria-expanded') === 'true';
-        ev.target.setAttribute('aria-expanded', String(!pressed));
+        var pressed = $mainNavToggle.attr('aria-expanded') === 'true';
+        $mainNavToggle.attr('aria-expanded', String(!pressed));
 
         // Toggle display of main-nav
-        mainNav.classList.toggle('is--expanded');
-        mainNavContents.setAttribute('aria-hidden', String(pressed));
+        $mainNav.toggleClass('is--expanded');
+        $mainNavContents.attr('aria-hidden', String(pressed));
       });
     },
   };
