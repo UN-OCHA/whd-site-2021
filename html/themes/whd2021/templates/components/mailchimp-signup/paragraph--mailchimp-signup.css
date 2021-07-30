@@ -52,6 +52,16 @@
   transition-delay: 0s, 0.5s, 0.5s;
 }
 
+/**
+ * Reduced motion
+ *
+ * If the user prefers reduced motion, we remove the transition entirely.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .mailchimp-signup--is-hidden {
+    transition: none;
+  }
+}
 
 
 /**
