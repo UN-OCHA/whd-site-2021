@@ -20,6 +20,13 @@
         $mainNav.toggleClass('is--expanded');
         $mainNavContents.attr('aria-hidden', String(pressed));
       });
+
+      // Clicking a link should shut the nav.
+      $mainNavLinks.on('click', function (ev) {
+        $mainNav.removeClass('is--expanded');
+        $mainNavToggle.attr('aria-expanded', String(false));
+        $mainNavContents.attr('aria-hidden', String(true));
+      });
     },
   };
 })(jQuery);
