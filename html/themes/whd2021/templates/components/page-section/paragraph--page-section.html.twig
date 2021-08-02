@@ -47,6 +47,7 @@
     not paragraph.isPublished() ? 'paragraph--unpublished',
     'page-section',
     'page-section--color-' ~ content.field_color|render|striptags|trim|clean_class,
+    content.field_display_flourishes|render|striptags|trim ? 'page-section--display-flourishes',
     '[ flow ]',
   ]
 %}
