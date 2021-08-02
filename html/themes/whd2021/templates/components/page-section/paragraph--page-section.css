@@ -63,6 +63,20 @@
   clip-path: polygon(0 0, 100% 0, 50% 100%);
 }
 
+.page-section--color-blue.page-section--display-flourishes::before {
+  --fl-width: 16vw;
+  --fl-height: 20vw;
+  content: var(--fl, ' ');
+  top: calc(0px - (var(--fl-height) / 2));
+  left: 0;
+  width: var(--fl-width);
+  height: var(--fl-height);
+
+  background:
+    linear-gradient(to bottom, #00b9f1, #00b9f1 50%, transparent 50%),
+    repeating-linear-gradient(to right, rgba(100, 100, 100, .5), rgba(100, 100, 100, .5) 1vw, transparent 1vw, transparent 2vw, rgba(100, 100, 100, .5) 2vw);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
 
 /**
  * The children of Page Section should have a max-width.
