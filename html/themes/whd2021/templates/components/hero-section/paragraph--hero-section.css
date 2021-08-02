@@ -72,3 +72,36 @@
   box-shadow: 10px 0 0 #00b9f1, -10px 0 0 #00b9f1;
   color: white;
 }
+
+.hero-section__caption {
+  position: absolute;
+  bottom: 0;
+  padding: .5em;
+  background: rgba(0, 0, 0, 0.666);
+  color: white;
+  font-size: .75em;
+}
+
+html[dir="ltr"] .hero-section__caption {
+  right: 0;
+}
+
+html[dir="rtl"] .hero-section__caption {
+  left: 0;
+}
+
+@media screen and (min-width: 30em) {
+  .hero-section__caption {
+    bottom: 1rem;
+    padding: 1em;
+    font-size: .875em;
+  }
+
+  html[dir="ltr"] .hero-section__caption {
+    right: 1rem;
+  }
+
+  html[dir="rtl"] .hero-section__caption {
+    left: 1rem;
+  }
+}

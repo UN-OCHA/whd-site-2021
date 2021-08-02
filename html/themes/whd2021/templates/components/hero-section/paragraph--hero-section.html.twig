@@ -57,7 +57,8 @@
     {% block content %}
       {{ content.field_heading_text }}
 
-      {{ content|without('field_photo', 'field_heading_text', 'field_justify_content') }}
+      {{ content|without('field_photo', 'field_heading_text', 'field_justify_content', 'field_photo_caption') }}
+      {{ content.field_photo_caption }}
     {% endblock %}
   </div>
 {% endblock paragraph %}
