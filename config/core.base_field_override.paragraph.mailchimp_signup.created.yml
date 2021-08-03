@@ -1,0 +1,18 @@
+uuid: 70b92586-574a-4040-9cd4-bd166341208d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.mailchimp_signup
+id: paragraph.mailchimp_signup.created
+field_name: created
+entity_type: paragraph
+bundle: mailchimp_signup
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

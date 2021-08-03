@@ -1,0 +1,10 @@
+uuid: 31351fa5-7062-4ab7-be10-a882e0a70f65
+langcode: en
+status: true
+dependencies: {  }
+id: whd_logo
+label: 'WHD Logo'
+icon_uuid: null
+icon_default: null
+description: 'The logo for World Humantarian Day. Some aspects can be configured.'
+behavior_plugins: {  }

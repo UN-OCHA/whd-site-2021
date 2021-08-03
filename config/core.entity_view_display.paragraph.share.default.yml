@@ -1,0 +1,31 @@
+uuid: a1c7bcf5-5e2e-4a55-9052-bdd3bba3083d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.share.field_heading_text
+    - field.field.paragraph.share.field_media
+    - paragraphs.paragraphs_type.share
+id: paragraph.share.default
+targetEntityType: paragraph
+bundle: share
+mode: default
+content:
+  field_heading_text:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_media:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: social_image
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

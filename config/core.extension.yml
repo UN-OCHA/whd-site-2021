@@ -10,7 +10,6 @@ module:
   config: 0
   contextual: 0
   datetime: 0
-  dblog: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
@@ -22,10 +21,17 @@ module:
   help: 0
   history: 0
   image: 0
+  language: 0
   link: 0
+  locale: 0
+  maintenance200: 0
   media: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
+  metatag_hreflang: 0
+  metatag_open_graph: 0
+  metatag_twitter_cards: 0
   node: 0
   options: 0
   page_cache: 0
@@ -37,13 +43,17 @@ module:
   social_api: 0
   social_auth: 0
   social_auth_hid: 0
+  syslog: 0
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
+  translatable_menu_link_uri: 0
   update: 0
   user: 0
   views_ui: 0
+  content_translation: 10
   views: 10
   paragraphs: 11
   minimal: 1000

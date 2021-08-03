@@ -1,0 +1,18 @@
+uuid: c3592ec9-b7ab-452b-a5d8-08c5498ff8d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.thr_logo
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.thr_logo
+target_entity_type_id: paragraph
+target_bundle: thr_logo
+default_langcode: site_default
+language_alterable: false

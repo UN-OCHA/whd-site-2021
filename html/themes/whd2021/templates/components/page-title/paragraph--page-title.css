@@ -1,0 +1,21 @@
+/**
+ * Paragraph: Page Title
+ */
+.page-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.page-title--color-gray {
+  color: #3c3c3c;
+}
+
+.page-title--color-blue {
+  color: #00b9f1;
+}
+
+.page-title--color-yellow {
+  color: #ffdc4b;
+}

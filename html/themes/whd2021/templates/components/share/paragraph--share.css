@@ -1,0 +1,90 @@
+/**
+ * Paragraph: Social Share
+ */
+.share {
+  /* nullify the normal effect of `.flow` because this widget appears in the
+  physical space of another widget, and leaving its margin is the smoothest way
+  to transition between the two */
+  margin-top: 0;
+
+  /* set max-height to 0 so we can reveal it when desired */
+  max-height: 0;
+  overflow: hidden;
+}
+
+/**
+ * Share tabs, with one tab per social network that we support.
+ */
+.share-tabs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.share-tabs__tab {
+  display: block;
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+.share-tabs__link {
+  /* Button layout */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+
+  /* Typography / visual */
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.tab--fb {
+  background-color: #4267b2;
+}
+.tab--fb img {
+  width: 78px;
+  height: 78px;
+}
+
+.tab--tw {
+  background-color: #1da1f2;
+}
+.tab--tw img {
+  width: 78px;
+  height: 63px;
+}
+
+.share-img img {
+  height: auto;
+}
+
+/**
+ * Revealing the Share widget after MC conversion.
+ *
+ * The JS that corresponds to this class is in the `mailchimp-signup` component.
+ */
+.share--is-visible {
+  max-height: 600px;
+
+  transition: 0.5s ease-in-out;
+  transition-property: max-height;
+  transition-delay: 0.5s;
+}
+
+/**
+ * Reduced motion
+ *
+ * If the user prefers reduced motion, we remove the transition entirely.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .share--is-visible {
+    transition: none;
+  }
+}

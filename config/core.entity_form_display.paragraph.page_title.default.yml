@@ -1,0 +1,21 @@
+uuid: bacc852d-1dcc-412d-822b-da78f3a0c8e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_title.field_color
+    - paragraphs.paragraphs_type.page_title
+id: paragraph.page_title.default
+targetEntityType: paragraph
+bundle: page_title
+mode: default
+content:
+  field_color:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * Implements template_preprocess_page().
+ */
+function whd2021_preprocess_page(&$variables) {
+  // Current language
+  $current_language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['current_language'] = $current_language;
+}
+
+/**
+ * Implements template_preprocess_paragraph().
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An array of elements to display in view mode.
+ *   - paragraph: The paragraph object.
+ *   - view_mode: View mode; e.g., 'full', 'teaser'...
+ */
+function whd2021_preprocess_paragraph(&$variables) {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = $variables['paragraph'];
+  // Get the parent bundle.
+  $parentBundle = $paragraph->getParentEntity()->bundle();
+
+  // Current language
+  $paragraph_language = $paragraph->getParentEntity()->language()->getId();
+  $variables['paragraph_language'] = $paragraph_language;
+
+  // Use the helper function to produce the page title compatible with cache.
+  $placeholder_title = array(
+    '#lazy_builder' => ['__whd2021_paragraphs_title_placeholder', ['page_title']],
+    '#create_placeholder' => TRUE,
+  );
+  $variables['title'] = $placeholder_title;
+}
+
+/**
+ * Helper function to provide Page Title to Paragraphs.
+ *
+ * @see https://drupal.stackexchange.com/a/212060
+ */
+function __whd2021_paragraphs_title_placeholder($page_title) {
+  // If you attempt to pass in $page_title from preprocess it will be cached!
+  $request = \Drupal::request();
+  $route_match = \Drupal::routeMatch();
+  $page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+
+  $title_array = array(
+    '#markup' => $page_title,
+  );
+
+  return $title_array;
+}

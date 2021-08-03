@@ -1,0 +1,23 @@
+uuid: 21f6c7f3-b163-4297-b700-98883464bf3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.thr_logo.field_thr_logo_with_whd
+    - paragraphs.paragraphs_type.thr_logo
+id: paragraph.thr_logo.default
+targetEntityType: paragraph
+bundle: thr_logo
+mode: default
+content:
+  field_thr_logo_with_whd:
+    weight: 0
+    label: hidden
+    settings:
+      format: custom
+      format_custom_true: whd-
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: ab78cca9-1d6e-4d3d-abb1-b140e769382f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button_text_after
+    - paragraphs.paragraphs_type.cta_button
+id: paragraph.cta_button.field_button_text_after
+field_name: field_button_text_after
+entity_type: paragraph
+bundle: cta_button
+label: 'Button text AFTER image'
+description: 'Some languages need text after the Button Image. Use only when necessary!'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,40 @@
+uuid: 9081f1f2-1e82-41ff-ac8b-24717fc53a3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.app_links.field_apple
+    - field.field.paragraph.app_links.field_google
+    - paragraphs.paragraphs_type.app_links
+  module:
+    - link
+id: paragraph.app_links.default
+targetEntityType: paragraph
+bundle: app_links
+mode: default
+content:
+  field_apple:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_google:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

@@ -47,11 +47,11 @@
     not paragraph.isPublished() ? 'paragraph--unpublished',
     'page-section',
     'page-section--color-' ~ content.field_color|render|striptags|trim|clean_class,
-    'flow',
+    '[ flow ]',
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+  <div{{ attributes.addClass(classes).setAttribute('id', 'section--' ~ paragraph.id()) }}>
     {% block content %}
       {{ content|without('field_color') }}
     {% endblock %}

@@ -1,0 +1,19 @@
+uuid: c2d501d0-d214-4656-9039-dbe894a71432
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mailchimp_list_id
+    - paragraphs.paragraphs_type.mailchimp_signup
+id: paragraph.mailchimp_signup.field_mailchimp_list_id
+field_name: field_mailchimp_list_id
+entity_type: paragraph
+bundle: mailchimp_signup
+label: 'MailChimp List ID'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

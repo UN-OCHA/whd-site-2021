@@ -1,0 +1,107 @@
+/**
+ * Paragraph: Hero Section
+ */
+.hero-section {
+  /* inner layout for Hero's contents */
+  display: flex;
+  flex-flow: column nowrap;
+  height: 75vw;
+  position: relative;
+
+  /* general styling */
+  text-align: center;
+
+  /**
+   * Do NOT set background-image. It's supplied by Twig via inline CSS.
+   * @see html/themes/whd2021/templates/components/hero-section/paragraph--hero-section.html.twig
+   */
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.hero-section--justify-content--flex-start {
+  justify-content: flex-start;
+  padding-top: 1rem;
+}
+.hero-section--justify-content--flex-end {
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+}
+.hero-section--justify-content--center {
+  justify-content: center;
+}
+.hero-section--justify-content--space-around {
+  justify-content: space-around;
+}
+.hero-section--justify-content--space-between {
+  justify-content: space-between;
+}
+.hero-section--justify-content--space-evenly {
+  justify-content: space-evenly;
+}
+
+.hero-section__title {
+  display: block;
+  margin: 0 4ch;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 570px) {
+  .hero-section__title {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .hero-section {
+    height: 66vw;
+  }
+
+  .hero-section__title {
+    font-size: 2.75rem;
+  }
+}
+
+.hero-section__highlight {
+  padding: .25rem;
+  background: #00b9f1;
+  box-shadow: 10px 0 0 #00b9f1, -10px 0 0 #00b9f1;
+  color: white;
+}
+
+.hero-section__caption {
+  position: absolute;
+  bottom: 0;
+  padding: .5em;
+  background: rgba(0, 0, 0, 0.666);
+  color: white;
+  font-size: .75em;
+}
+
+html[dir="ltr"] .hero-section__caption {
+  right: 0;
+}
+
+html[dir="rtl"] .hero-section__caption {
+  left: 0;
+}
+
+@media screen and (min-width: 30em) {
+  .hero-section__caption {
+    bottom: 1rem;
+    padding: 1em;
+    font-size: .875em;
+  }
+
+  html[dir="ltr"] .hero-section__caption {
+    right: 1rem;
+  }
+
+  html[dir="rtl"] .hero-section__caption {
+    left: 1rem;
+  }
+}

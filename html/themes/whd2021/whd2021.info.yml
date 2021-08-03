@@ -3,7 +3,7 @@ type: theme
 description: WHD 2021 drupal theme.
 core: 8.x
 base theme: stark
-# logo: 'img/logos/whd.svg'
+screenshot: img/thr-logo/whd-thr-en.png
 
 # interface translation project: whd
 # interface translation server pattern: themes/custom/whd/translations/%language.po
@@ -15,4 +15,7 @@ regions:
   footer_navigation: Footer navigation
 
 libraries:
+  - core/drupal
+  - core/jquery
+  - core/jquery.once
   - whd2021/global-styling

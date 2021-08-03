@@ -26,7 +26,7 @@
  */
 #}
 <!DOCTYPE html>
-<html{{ html_attributes }}>
+<html{{ html_attributes.addClass('no-js') }}>
   <head>
     <head-placeholder token="{{ placeholder_token }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
@@ -41,7 +41,7 @@
       Keyboard navigation/accessibility link to main content section in
       page.html.twig.
     #}
-    <a href="#main-content" class="visually-hidden focusable">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
       {{ 'Skip to main content'|t }}
     </a>
     {{ page_top }}

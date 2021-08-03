@@ -5,30 +5,89 @@ global-styling:
   css:
     theme:
       css/styles.css: {}
+      templates/components/global-header/global-header.css: {}
       templates/components/global-footer/global-footer.css: {}
+  js:
+    templates/components/global-header/global-header.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
 
 #
 # Components
 #
+app-links:
+  css:
+    theme:
+      templates/components/app-links/paragraph--app-links.css: {}
+
+article-teaser:
+  css:
+    theme:
+      templates/components/article-teaser/paragraph--article-teaser.css: {}
+
+cta-button:
+  css:
+    theme:
+      templates/components/cta-button/paragraph--cta-button.css: {}
+
 cta-heading:
   css:
     theme:
       templates/components/cta-heading/paragraph--cta-heading.css: {}
+
+front-page:
+  css:
+    theme:
+      templates/components/front-page/front-page.css: {}
 
 heading:
   css:
     theme:
       templates/components/heading/paragraph--heading.css: {}
 
+hero-section:
+  css:
+    theme:
+      templates/components/hero-section/paragraph--hero-section.css: {}
+
+mailchimp-signup:
+  css:
+    theme:
+      templates/components/mailchimp-signup/paragraph--mailchimp-signup.css: {}
+  js:
+    templates/components/mailchimp-signup/paragraph--mailchimp-signup.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - whd2021/cta-button
+
 page-section:
   css:
     theme:
       templates/components/page-section/paragraph--page-section.css: {}
 
+page-title:
+  css:
+    theme:
+      templates/components/page-title/paragraph--page-title.css: {}
+
+share:
+  css:
+    theme:
+      templates/components/share/paragraph--share.css: {}
+
 text:
   css:
     theme:
       templates/components/text/paragraph--text.css: {}
+
+thr-logo:
+  css:
+    theme:
+      templates/components/thr-logo/paragraph--thr-logo.css: {}
 
 video-embed:
   css:
@@ -39,3 +98,8 @@ video-grid:
   css:
     theme:
       templates/components/video-grid/paragraph--video-grid.css: {}
+
+whd-logo:
+  css:
+    theme:
+      templates/components/whd-logo/paragraph--whd-logo.css: {}

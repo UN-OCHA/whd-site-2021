@@ -1,0 +1,44 @@
+/**
+ * Front page styles
+ */
+.front-page {}
+
+.front-page__logos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 18vw;
+  padding: 0 .5rem;
+}
+
+@media screen and (min-width: 34em) {
+  .front-page__logos {
+    position: absolute;
+    top: 6rem;
+    z-index: 10;
+    height: 15vw;
+    padding: 0 2rem;
+  }
+}
+
+.front-page__logo {
+  /**
+   * background-image is dynamically supplied via twig
+   * @see html/themes/whd2021/templates/page--front.html.twig
+   */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo--whd {
+  width: 33.3vw;
+  height: 15vw;
+}
+
+.logo--thr {
+  width: 15vw;
+  height: 15vw;
+}

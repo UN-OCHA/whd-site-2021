@@ -1,0 +1,23 @@
+uuid: 83740417-f432-424e-8144-eaeb3d8757b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_whd_logo_color
+    - paragraphs.paragraphs_type.whd_logo
+  module:
+    - options
+id: paragraph.whd_logo.field_whd_logo_color
+field_name: field_whd_logo_color
+entity_type: paragraph
+bundle: whd_logo
+label: 'Logo color'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: white
+default_value_callback: ''
+settings: {  }
+field_type: list_string

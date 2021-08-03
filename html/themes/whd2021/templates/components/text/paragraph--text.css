@@ -11,3 +11,22 @@
 .page-section > .paragraph.paragraph--type--text {
   max-width: 60ch;
 }
+
+/**
+ * CKEditor custom styles
+ */
+.text--white {
+  color: white;
+}
+.text--blue {
+  color: #00b9f1;
+}
+.text--gray {
+  color: #3c3c3c;
+}
+.text--yellow {
+  color: #ffdc4b;
+}
+.text--smaller {
+  font-size: calc(1em - 3px);
+}
