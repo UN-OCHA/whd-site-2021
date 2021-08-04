@@ -41,6 +41,12 @@ front-page:
   css:
     theme:
       templates/components/front-page/front-page.css: {}
+  js:
+    templates/components/front-page/front-page.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
 
 heading:
   css:
