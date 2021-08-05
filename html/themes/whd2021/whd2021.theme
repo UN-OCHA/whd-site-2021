@@ -50,13 +50,13 @@ function whd2021_preprocess_paragraph(array &$variables) {
   // provide several images with some level of responsiveness, we generate the
   // additional image styles here.
   if ($paragraph->hasField('field_photo')) {
-    // Generate image styles
+    // Generate image styles.
     $photo_uri = $paragraph->field_photo->entity->getFileUri();
     $original_url = file_url_transform_relative(file_create_url($photo_uri));
     $sm_url = ImageStyle::load('640w')->buildUrl($photo_uri);
     $med_url = ImageStyle::load('1024w')->buildUrl($photo_uri);
 
-    // Expose to Twig
+    // Expose to Twig.
     $variables['photo_original'] = $original_url;
     $variables['photo_sm'] = $sm_url;
     $variables['photo_md'] = $med_url;
