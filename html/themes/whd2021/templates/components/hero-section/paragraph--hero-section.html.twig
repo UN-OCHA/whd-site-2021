@@ -50,14 +50,31 @@
     '[ flow ]',
   ]
 %}
-{% set bgUrl = content.field_photo.0.value %}
-
+{% set html_id = paragraph.id() %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes).setAttribute('id', 'section--' ~ paragraph.id()).setAttribute('style', 'background-image: url(' ~ content.field_photo|render|striptags|trim ~ ');') }}>
+  <div{{ attributes.addClass(classes).setAttribute('id', 'section--' ~ html_id) }}>
+    {# Since we need to load the image inside Twig, and would like to specify
+    multiple image styles, we create <style> block that can use @media queries
+    but still contains the dynamic image path from the DB. #}
+    <style>
+      #section--{{ html_id }} {
+        background-image: url('{{ photo_sm }}');
+      }
+      @media screen and (min-width: 560px) {
+        #section--{{ html_id }} {
+          background-image: url('{{ photo_md }}');
+        }
+      }
+      @media screen and (min-width: 860px) {
+        #section--{{ html_id }} {
+          background-image: url('{{ photo_original }}');
+        }
+      }
+    </style>
     {% block content %}
       {{ content.field_heading_text }}
 
-      {{ content|without('field_photo', 'field_heading_text', 'field_justify_content', 'field_photo_caption') }}
+      {{ content|without('field_photo', 'field_photo_caption', 'field_heading_text', 'field_justify_content') }}
       {{ content.field_photo_caption }}
     {% endblock %}
   </div>
