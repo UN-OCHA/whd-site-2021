@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.page_section.field_color
     - field.field.paragraph.page_section.field_content
+    - field.field.paragraph.page_section.field_display_flourishes
     - paragraphs.paragraphs_type.page_section
   module:
     - entity_reference_revisions
@@ -29,5 +30,15 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_display_flourishes:
+    weight: 2
+    label: hidden
+    settings:
+      format: custom
+      format_custom_true: 'true'
+      format_custom_false: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
 hidden: {  }

@@ -1,0 +1,23 @@
+uuid: a1e93e1e-3922-48f4-9253-f29af9726e5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_flourishes
+    - paragraphs.paragraphs_type.page_section
+id: paragraph.page_section.field_display_flourishes
+field_name: field_display_flourishes
+entity_type: paragraph
+bundle: page_section
+label: 'Display flourishes?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

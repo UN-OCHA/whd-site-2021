@@ -19,6 +19,82 @@
 }
 
 /**
+ * Section Flourishes
+ *
+ * Some sections have little piecs of geometry that overflow the main box. Each
+ * one seems to be unique to the color of the section, so we build each piece of
+ * decoration based on the Section Color.
+ *
+ * Note: these effects intentionally use un-polyfilled features of CSS, in order
+ * to prevent older browsers from displaying them.
+ */
+.page-section--display-flourishes {
+  position: relative;
+}
+
+.page-section--display-flourishes::before,
+.page-section--display-flourishes::after {
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+.page-section--color-gray.page-section--display-flourishes::before {
+  content: var(--fl, ' ');
+  top: 0;
+  right: 0;
+  width: 20vw;
+  height: 10vw;
+
+  background: repeating-linear-gradient(to right, #646464, #646464 1vw, transparent 1vw, transparent 2vw, #646464 2vw);
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.page-section--color-gray.page-section--display-flourishes::after {
+  --fl-height: 3vw;
+  content: var(--fl, ' ');
+  bottom: calc(1px - var(--fl-height));
+  left: 50%;
+  transform: translate(-50%);
+  width: 20vw;
+  height: var(--fl-height);
+
+  background: #3c3c3c;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.page-section--color-blue.page-section--display-flourishes::before {
+  --fl-width: 16vw;
+  --fl-height: 20vw;
+  content: var(--fl, ' ');
+  top: calc(0px - (var(--fl-height) / 2));
+  left: 0;
+  width: var(--fl-width);
+  height: var(--fl-height);
+
+  background:
+    linear-gradient(to bottom, #00b9f1, #00b9f1 50%, transparent 50%),
+    repeating-linear-gradient(to right, rgba(100, 100, 100, .5), rgba(100, 100, 100, .5) 1vw, transparent 1vw, transparent 2vw, rgba(100, 100, 100, .5) 2vw);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.page-section--color-yellow.page-section--display-flourishes::before {
+  --fl-width: 16vw;
+  --fl-height: 20vw;
+  content: var(--fl, ' ');
+  top: calc(0px - (var(--fl-height) / 2));
+  right: 0;
+  width: var(--fl-width);
+  height: var(--fl-height);
+
+  background:
+    linear-gradient(to bottom, #ffdc4b, #ffdc4b 50%, transparent 50%),
+    repeating-linear-gradient(to right, rgba(100, 100, 100, .5), rgba(100, 100, 100, .5) 1vw, transparent 1vw, transparent 2vw, rgba(100, 100, 100, .5) 2vw);
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+
+/**
  * The children of Page Section should have a max-width.
  */
 .page-section > .paragraph {
