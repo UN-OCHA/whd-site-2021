@@ -10,7 +10,7 @@
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches === false) {
         $mainNavLinks.on('click', function smoothScroll (ev) {
           ev.preventDefault();
-          var target = $(this).attr('href').replace('/','');
+          var target = '#' + $(this).attr('href').split('#')[1];
           $(target).get(0).scrollIntoView({behavior: 'smooth'});
         });
       }
