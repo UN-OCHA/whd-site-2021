@@ -1,0 +1,9 @@
+type: module
+name: OCHA Site Audit
+description: OCHA-specific extensions to the Site Audit module.
+package: Development
+core_version_requirement: ^8.8 || ^9
+php: 7.4
+tags:
+ - developer
+ - ocha
