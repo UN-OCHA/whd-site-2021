@@ -33,17 +33,6 @@ function whd2021_preprocess_paragraph(array &$variables) {
   $paragraph_language = $paragraph->getParentEntity()->language()->getId();
   $variables['paragraph_language'] = $paragraph_language;
 
-  // Paragraph type: Page Title
-  // Use the helper function to produce the page title compatible with cache.
-  $placeholder_title = [
-    '#lazy_builder' => [
-      '__whd2021_paragraphs_title_placeholder',
-      ['page_title'],
-    ],
-    '#create_placeholder' => TRUE,
-  ];
-  $variables['title'] = $placeholder_title;
-
   // Generate image styles for Hero Sections
   //
   // Since the image is dynamic and must appear as a raw URL, but we want to
@@ -64,19 +53,9 @@ function whd2021_preprocess_paragraph(array &$variables) {
 }
 
 /**
- * Helper function to provide Page Title to Paragraphs.
- *
- * @see https://drupal.stackexchange.com/a/212060
+ * Scan our Components and load any theme.inc files we find.
  */
-function __whd2021_paragraphs_title_placeholder($page_title) {
-  // If you attempt to pass in $page_title from preprocess it will be cached!
-  $request = \Drupal::request();
-  $route_match = \Drupal::routeMatch();
-  $page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
-
-  $title_array = [
-    '#markup' => $page_title,
-  ];
-
-  return $title_array;
+$component_includes = glob(__DIR__ . '/templates/components/*/*.theme.inc');
+foreach ($component_includes as $component_file) {
+  include($component_file);
 }
