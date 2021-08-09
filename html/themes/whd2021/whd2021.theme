@@ -5,8 +5,6 @@
  * Hooks and functions for the custom theme.
  */
 
-use Drupal\image\Entity\ImageStyle;
-
 /**
  * Implements template_preprocess_page().
  */
@@ -19,37 +17,19 @@ function whd2021_preprocess_page(&$variables) {
 /**
  * Implements template_preprocess_paragraph().
  *
- * @param array $variables
- *   An associative array containing:
- *   - elements: An array of elements to display in view mode.
- *   - paragraph: The paragraph object.
- *   - view_mode: View mode; e.g., 'full', 'teaser'...
+ * This function holds generic enhancements to ALL Paragraph types on the site.
+ * If you want to implement preprocessing for a specific Paragraph type, create
+ * a component folder and place the code inside the COMPONENT.theme.inc file in
+ * its directory. See example:
+ *
+ * @see templates/components/page-title/page-title.theme.inc
  */
 function whd2021_preprocess_paragraph(array &$variables) {
-  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
   $paragraph = $variables['paragraph'];
 
   // Language of this Paragraph.
   $paragraph_language = $paragraph->getParentEntity()->language()->getId();
   $variables['paragraph_language'] = $paragraph_language;
-
-  // Generate image styles for Hero Sections
-  //
-  // Since the image is dynamic and must appear as a raw URL, but we want to
-  // provide several images with some level of responsiveness, we generate the
-  // additional image styles here.
-  if ($paragraph->hasField('field_photo')) {
-    // Generate image styles.
-    $photo_uri = $paragraph->field_photo->entity->getFileUri();
-    $original_url = file_url_transform_relative(file_create_url($photo_uri));
-    $sm_url = ImageStyle::load('640w')->buildUrl($photo_uri);
-    $med_url = ImageStyle::load('1024w')->buildUrl($photo_uri);
-
-    // Expose to Twig.
-    $variables['photo_original'] = $original_url;
-    $variables['photo_sm'] = $sm_url;
-    $variables['photo_md'] = $med_url;
-  }
 }
 
 /**
