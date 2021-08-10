@@ -10,7 +10,7 @@ use Drupal\image\Entity\ImageStyle;
 /**
  * Implements template_preprocess_paragraph__TYPE().
  *
- * Generate image styles for Hero Sections
+ * Generate image styles for Hero Sections.
  *
  * Since the image is dynamic and must appear as a raw URL, but we want to
  * provide several images with some level of responsiveness, we generate the
