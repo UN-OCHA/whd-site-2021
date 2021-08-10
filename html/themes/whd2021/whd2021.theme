@@ -37,5 +37,5 @@ function whd2021_preprocess_paragraph(array &$variables) {
  */
 $component_includes = glob(__DIR__ . '/templates/components/*/*.theme.inc');
 foreach ($component_includes as $component_file) {
-  include($component_file);
+  include_once($component_file);
 }
