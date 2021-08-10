@@ -5,7 +5,7 @@
   /* inner layout for Hero's contents */
   display: flex;
   flex-flow: column nowrap;
-  height: 75vw;
+  height: 100vw;
   position: relative;
 
   /* general styling */
@@ -56,7 +56,13 @@
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 760px) {
+  .hero-section {
+    height: 75vw;
+  }
+}
+
+@media screen and (min-width: 1010px) {
   .hero-section {
     height: 66vw;
   }
