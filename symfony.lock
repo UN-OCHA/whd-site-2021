@@ -570,8 +570,5 @@
     },
     "weitzman/logintrait": {
         "version": "1.2.0"
-    },
-    "zaporylie/composer-drupal-optimizations": {
-        "version": "1.2.0"
     }
 }
